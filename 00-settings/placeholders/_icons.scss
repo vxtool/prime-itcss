@@ -1,0 +1,18 @@
+/// Icones dos projetos
+///
+/// @group itcss-skeleton-scss
+/// @author Hemerson Vianna
+///
+/// @access public
+///
+%fa {
+  display: inline-block;
+  font-family: "Fontawesome";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+%fa-bars { content: "\f0c9"; }
