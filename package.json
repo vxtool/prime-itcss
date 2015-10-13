@@ -1,12 +1,28 @@
 {
   "name": "primeitcss",
+  "description": "Base para a estrutura SCSS/STYLUS/LESS",
   "version": "0.1.0",
-  "dependencies": {
-  },
+  "repository": "descco/prime-itcss",
+  "author": "Hemerson Vianna <hemerson.lourenco@gmail.com> (http://hemersonvianna.io)",
+  "tags": [
+    "css",
+    "scss",
+    "stylus",
+    "less",
+    "base",
+    "asset",
+    "structure"
+  ],
+  "dependencies": {},
   "devDependencies": {
     "grunt": ">=0.4.5",
     "grunt-contrib-clean": "^0.6.0",
     "grunt-sass": "^1.0.0",
+    "gulp": "^3.9.0",
+    "gulp-clean": "^0.3.1",
+    "gulp-load-tasks": "^0.8.4",
+    "gulp-sass": "^2.1.0",
     "load-grunt-config": "^0.17.2"
-  }
+  },
+  "license": "MIT"
 }
