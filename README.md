@@ -26,7 +26,7 @@ Lembrando mais uma vez, a intenção é mostrar o conceito de que é preciso se 
 ***style.scss*** (site)
 ```
 @import "../core/00-settings/_variables";
-@import "../core/01-tools/_mixins_";
+@import "../core/01-tools/_mixins";
 
 @import "05-objects/_alerts";
 
