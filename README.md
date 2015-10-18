@@ -15,7 +15,19 @@ A ideia de se utilizar o núcleo, se dá quando é necessário ter mais de um pr
 
 Com isso, no `core` ficaram as ferramentas que serão utilizados em ambos os projetos (ícones, mixins, functions e etc). 
 
-Em cada pasta de projeto, não será necessário ter algumas pastas (00-settings, 01-tools, 03-generic, 03-base, 04-vendor e 09-trumps), mas isso não é uma regra, você saberá o melhor para o seu projeto. Ao escrever, estou considerando que os projetos de exemplo (site, admin), são diferentes e por terem essa distinção, as pastas (05-objetcs, 06-components, 07-pages e 08-theme), serão personalizadas para cada projeto.
+Em cada pasta de projeto, não será necessário ter algumas pastas (***00-settings, 01-tools, 03-generic, 03-base, 04-vendor e 09-trumps***), mas isso não é uma regra, você saberá o melhor para o seu projeto. 
+
+Ao escrever, estou considerando que os projetos de exemplo (site, admin), são diferentes e por terem essa distinção, as pastas (***05-objetcs, 06-components, 07-pages e 08-theme***), serão personalizadas para cada projeto.
 
 Lembrando mais uma vez, a intenção é mostrar o conceito de que é preciso se ter um `core`, para evitar código repetido e que dificulte a manutenção. A organização das pastas nos projetos, fica ao critério da necessidade do mesmo.
 
+## Exemplo de uso
+
+***style.scss*** (site)
+```
+@import "../core/00-settings/_variables";
+@import "../core/01-tools/_mixins_";
+
+@import "/05-objects/_alerts";
+
+```
