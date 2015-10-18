@@ -28,6 +28,6 @@ Lembrando mais uma vez, a intenção é mostrar o conceito de que é preciso se 
 @import "../core/00-settings/_variables";
 @import "../core/01-tools/_mixins_";
 
-@import "/05-objects/_alerts";
+@import "05-objects/_alerts";
 
 ```
