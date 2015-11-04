@@ -1,7 +1,5 @@
 # Prime ITCSS SCSS 
 
-[![NPM version][npm-image]][npm-url] [![Dependency Status][depstat-image]][depstat-url]
-
 Com a intenção de se ter um núcleo de CSS de vários projetos em um só lugar. Foi criado esse projeto para servir como base em um projeto front-end. Utilizando a metodologia do [ITCSS](http://itcss.io/) e a sintaxe do [SCSS](http://sass-lang.com/).
 
 A ideia de se utilizar o núcleo, se dá quando é necessário ter mais de um projeto no mesmo domínio. Digamos que no seu domínio, terá que haver os arquivos para o site e uma área de admin. Assim, a estrutura com o núcleo ficaria como no exemplo, abaixo:
@@ -26,6 +24,7 @@ Lembrando mais uma vez, a intenção é mostrar o conceito de que é preciso se 
 ## Exemplo de uso
 
 ***style.scss*** (site)
+
 ```
 @import "../prime/00-settings/_variables";
 @import "../prime/01-tools/_mixins";
@@ -36,6 +35,4 @@ Lembrando mais uma vez, a intenção é mostrar o conceito de que é preciso se 
 
 ## License
 
-The code is available under the [MIT license](LICENSE).
-
-[![NPM downloads][npm-downloads]][npm-url]
+Copyright (c) 2015 Hemerson Vianna Licensed under the [MIT license](LICENSE).
