@@ -1,4 +1,6 @@
-# Prime ITCSS SCSS
+# Prime ITCSS SCSS 
+
+[![NPM version][npm-image]][npm-url] [![Dependency Status][depstat-image]][depstat-url]
 
 Com a intenção de se ter um núcleo de CSS de vários projetos em um só lugar. Foi criado esse projeto para servir como base em um projeto front-end. Utilizando a metodologia do [ITCSS](http://itcss.io/) e a sintaxe do [SCSS](http://sass-lang.com/).
 
@@ -31,3 +33,9 @@ Lembrando mais uma vez, a intenção é mostrar o conceito de que é preciso se 
 @import "05-objects/_alerts";
 
 ```
+
+## License
+
+The code is available under the [MIT license](LICENSE).
+
+[![NPM downloads][npm-downloads]][npm-url]
