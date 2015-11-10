@@ -1,0 +1,25 @@
+// Coluna do grid
+/// 
+/// @group itcss-skeleton-scss
+/// @author Hemerson Vianna
+/// 
+/// @param {number} $columns
+/// @param {number} $push
+/// @param {string} $fold [left]
+///
+/// @access public
+///
+@mixin x-column($columns:$columns, $push:$push, $fold:left) {
+	display: inline;
+	float: $fold;
+	width: x-gridsystem-width($columns);
+	padding-left: $padding-width;
+  padding-right: $padding-width;
+  
+  @if $fold == left {
+    margin-left:x-gridsystem-width($push);
+  }
+  @if $fold == right {
+    margin-right:x-gridsystem-width($push);
+  }
+}
