@@ -15,4 +15,679 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-%fa-bars { content: "\f0c9"; }
+%fa-glass { content: $fa-var-glass; }
+%fa-music { content: $fa-var-music; }
+%fa-search { content: $fa-var-search; }
+%fa-envelope-o { content: $fa-var-envelope-o; }
+%fa-heart { content: $fa-var-heart; }
+%fa-star { content: $fa-var-star; }
+%fa-star-o { content: $fa-var-star-o; }
+%fa-user { content: $fa-var-user; }
+%fa-film { content: $fa-var-film; }
+%fa-th-large { content: $fa-var-th-large; }
+%fa-th { content: $fa-var-th; }
+%fa-th-list { content: $fa-var-th-list; }
+%fa-check { content: $fa-var-check; }
+%fa-remove,
+%fa-close,
+%fa-times { content: $fa-var-times; }
+%fa-search-plus { content: $fa-var-search-plus; }
+%fa-search-minus { content: $fa-var-search-minus; }
+%fa-power-off { content: $fa-var-power-off; }
+%fa-signal { content: $fa-var-signal; }
+%fa-gear,
+%fa-cog { content: $fa-var-cog; }
+%fa-trash-o { content: $fa-var-trash-o; }
+%fa-home { content: $fa-var-home; }
+%fa-file-o { content: $fa-var-file-o; }
+%fa-clock-o { content: $fa-var-clock-o; }
+%fa-road { content: $fa-var-road; }
+%fa-download { content: $fa-var-download; }
+%fa-arrow-circle-o-down { content: $fa-var-arrow-circle-o-down; }
+%fa-arrow-circle-o-up { content: $fa-var-arrow-circle-o-up; }
+%fa-inbox { content: $fa-var-inbox; }
+%fa-play-circle-o { content: $fa-var-play-circle-o; }
+%fa-rotate-right,
+%fa-repeat { content: $fa-var-repeat; }
+%fa-refresh { content: $fa-var-refresh; }
+%fa-list-alt { content: $fa-var-list-alt; }
+%fa-lock { content: $fa-var-lock; }
+%fa-flag { content: $fa-var-flag; }
+%fa-headphones { content: $fa-var-headphones; }
+%fa-volume-off { content: $fa-var-volume-off; }
+%fa-volume-down { content: $fa-var-volume-down; }
+%fa-volume-up { content: $fa-var-volume-up; }
+%fa-qrcode { content: $fa-var-qrcode; }
+%fa-barcode { content: $fa-var-barcode; }
+%fa-tag { content: $fa-var-tag; }
+%fa-tags { content: $fa-var-tags; }
+%fa-book { content: $fa-var-book; }
+%fa-bookmark { content: $fa-var-bookmark; }
+%fa-print { content: $fa-var-print; }
+%fa-camera { content: $fa-var-camera; }
+%fa-font { content: $fa-var-font; }
+%fa-bold { content: $fa-var-bold; }
+%fa-italic { content: $fa-var-italic; }
+%fa-text-height { content: $fa-var-text-height; }
+%fa-text-width { content: $fa-var-text-width; }
+%fa-align-left { content: $fa-var-align-left; }
+%fa-align-center { content: $fa-var-align-center; }
+%fa-align-right { content: $fa-var-align-right; }
+%fa-align-justify { content: $fa-var-align-justify; }
+%fa-list { content: $fa-var-list; }
+%fa-dedent,
+%fa-outdent { content: $fa-var-outdent; }
+%fa-indent { content: $fa-var-indent; }
+%fa-video-camera { content: $fa-var-video-camera; }
+%fa-photo,
+%fa-image,
+%fa-picture-o { content: $fa-var-picture-o; }
+%fa-pencil { content: $fa-var-pencil; }
+%fa-map-marker { content: $fa-var-map-marker; }
+%fa-adjust { content: $fa-var-adjust; }
+%fa-tint { content: $fa-var-tint; }
+%fa-edit,
+%fa-pencil-square-o { content: $fa-var-pencil-square-o; }
+%fa-share-square-o { content: $fa-var-share-square-o; }
+%fa-check-square-o { content: $fa-var-check-square-o; }
+%fa-arrows { content: $fa-var-arrows; }
+%fa-step-backward { content: $fa-var-step-backward; }
+%fa-fast-backward { content: $fa-var-fast-backward; }
+%fa-backward { content: $fa-var-backward; }
+%fa-play { content: $fa-var-play; }
+%fa-pause { content: $fa-var-pause; }
+%fa-stop { content: $fa-var-stop; }
+%fa-forward { content: $fa-var-forward; }
+%fa-fast-forward { content: $fa-var-fast-forward; }
+%fa-step-forward { content: $fa-var-step-forward; }
+%fa-eject { content: $fa-var-eject; }
+%fa-chevron-left { content: $fa-var-chevron-left; }
+%fa-chevron-right { content: $fa-var-chevron-right; }
+%fa-plus-circle { content: $fa-var-plus-circle; }
+%fa-minus-circle { content: $fa-var-minus-circle; }
+%fa-times-circle { content: $fa-var-times-circle; }
+%fa-check-circle { content: $fa-var-check-circle; }
+%fa-question-circle { content: $fa-var-question-circle; }
+%fa-info-circle { content: $fa-var-info-circle; }
+%fa-crosshairs { content: $fa-var-crosshairs; }
+%fa-times-circle-o { content: $fa-var-times-circle-o; }
+%fa-check-circle-o { content: $fa-var-check-circle-o; }
+%fa-ban { content: $fa-var-ban; }
+%fa-arrow-left { content: $fa-var-arrow-left; }
+%fa-arrow-right { content: $fa-var-arrow-right; }
+%fa-arrow-up { content: $fa-var-arrow-up; }
+%fa-arrow-down { content: $fa-var-arrow-down; }
+%fa-mail-forward,
+%fa-share { content: $fa-var-share; }
+%fa-expand { content: $fa-var-expand; }
+%fa-compress { content: $fa-var-compress; }
+%fa-plus { content: $fa-var-plus; }
+%fa-minus { content: $fa-var-minus; }
+%fa-asterisk { content: $fa-var-asterisk; }
+%fa-exclamation-circle { content: $fa-var-exclamation-circle; }
+%fa-gift { content: $fa-var-gift; }
+%fa-leaf { content: $fa-var-leaf; }
+%fa-fire { content: $fa-var-fire; }
+%fa-eye { content: $fa-var-eye; }
+%fa-eye-slash { content: $fa-var-eye-slash; }
+%fa-warning,
+%fa-exclamation-triangle { content: $fa-var-exclamation-triangle; }
+%fa-plane { content: $fa-var-plane; }
+%fa-calendar { content: $fa-var-calendar; }
+%fa-random { content: $fa-var-random; }
+%fa-comment { content: $fa-var-comment; }
+%fa-magnet { content: $fa-var-magnet; }
+%fa-chevron-up { content: $fa-var-chevron-up; }
+%fa-chevron-down { content: $fa-var-chevron-down; }
+%fa-retweet { content: $fa-var-retweet; }
+%fa-shopping-cart { content: $fa-var-shopping-cart; }
+%fa-folder { content: $fa-var-folder; }
+%fa-folder-open { content: $fa-var-folder-open; }
+%fa-arrows-v { content: $fa-var-arrows-v; }
+%fa-arrows-h { content: $fa-var-arrows-h; }
+%fa-bar-chart-o,
+%fa-bar-chart { content: $fa-var-bar-chart; }
+%fa-twitter-square { content: $fa-var-twitter-square; }
+%fa-facebook-square { content: $fa-var-facebook-square; }
+%fa-camera-retro { content: $fa-var-camera-retro; }
+%fa-key { content: $fa-var-key; }
+%fa-gears,
+%fa-cogs { content: $fa-var-cogs; }
+%fa-comments { content: $fa-var-comments; }
+%fa-thumbs-o-up { content: $fa-var-thumbs-o-up; }
+%fa-thumbs-o-down { content: $fa-var-thumbs-o-down; }
+%fa-star-half { content: $fa-var-star-half; }
+%fa-heart-o { content: $fa-var-heart-o; }
+%fa-sign-out { content: $fa-var-sign-out; }
+%fa-linkedin-square { content: $fa-var-linkedin-square; }
+%fa-thumb-tack { content: $fa-var-thumb-tack; }
+%fa-external-link { content: $fa-var-external-link; }
+%fa-sign-in { content: $fa-var-sign-in; }
+%fa-trophy { content: $fa-var-trophy; }
+%fa-github-square { content: $fa-var-github-square; }
+%fa-upload { content: $fa-var-upload; }
+%fa-lemon-o { content: $fa-var-lemon-o; }
+%fa-phone { content: $fa-var-phone; }
+%fa-square-o { content: $fa-var-square-o; }
+%fa-bookmark-o { content: $fa-var-bookmark-o; }
+%fa-phone-square { content: $fa-var-phone-square; }
+%fa-twitter { content: $fa-var-twitter; }
+%fa-facebook-f,
+%fa-facebook { content: $fa-var-facebook; }
+%fa-github { content: $fa-var-github; }
+%fa-unlock { content: $fa-var-unlock; }
+%fa-credit-card { content: $fa-var-credit-card; }
+%fa-feed,
+%fa-rss { content: $fa-var-rss; }
+%fa-hdd-o { content: $fa-var-hdd-o; }
+%fa-bullhorn { content: $fa-var-bullhorn; }
+%fa-bell { content: $fa-var-bell; }
+%fa-certificate { content: $fa-var-certificate; }
+%fa-hand-o-right { content: $fa-var-hand-o-right; }
+%fa-hand-o-left { content: $fa-var-hand-o-left; }
+%fa-hand-o-up { content: $fa-var-hand-o-up; }
+%fa-hand-o-down { content: $fa-var-hand-o-down; }
+%fa-arrow-circle-left { content: $fa-var-arrow-circle-left; }
+%fa-arrow-circle-right { content: $fa-var-arrow-circle-right; }
+%fa-arrow-circle-up { content: $fa-var-arrow-circle-up; }
+%fa-arrow-circle-down { content: $fa-var-arrow-circle-down; }
+%fa-globe { content: $fa-var-globe; }
+%fa-wrench { content: $fa-var-wrench; }
+%fa-tasks { content: $fa-var-tasks; }
+%fa-filter { content: $fa-var-filter; }
+%fa-briefcase { content: $fa-var-briefcase; }
+%fa-arrows-alt { content: $fa-var-arrows-alt; }
+%fa-group,
+%fa-users { content: $fa-var-users; }
+%fa-chain,
+%fa-link { content: $fa-var-link; }
+%fa-cloud { content: $fa-var-cloud; }
+%fa-flask { content: $fa-var-flask; }
+%fa-cut,
+%fa-scissors { content: $fa-var-scissors; }
+%fa-copy,
+%fa-files-o { content: $fa-var-files-o; }
+%fa-paperclip { content: $fa-var-paperclip; }
+%fa-save,
+%fa-floppy-o { content: $fa-var-floppy-o; }
+%fa-square { content: $fa-var-square; }
+%fa-navicon,
+%fa-reorder,
+%fa-bars { content: $fa-var-bars; }
+%fa-list-ul { content: $fa-var-list-ul; }
+%fa-list-ol { content: $fa-var-list-ol; }
+%fa-strikethrough { content: $fa-var-strikethrough; }
+%fa-underline { content: $fa-var-underline; }
+%fa-table { content: $fa-var-table; }
+%fa-magic { content: $fa-var-magic; }
+%fa-truck { content: $fa-var-truck; }
+%fa-pinterest { content: $fa-var-pinterest; }
+%fa-pinterest-square { content: $fa-var-pinterest-square; }
+%fa-google-plus-square { content: $fa-var-google-plus-square; }
+%fa-google-plus { content: $fa-var-google-plus; }
+%fa-money { content: $fa-var-money; }
+%fa-caret-down { content: $fa-var-caret-down; }
+%fa-caret-up { content: $fa-var-caret-up; }
+%fa-caret-left { content: $fa-var-caret-left; }
+%fa-caret-right { content: $fa-var-caret-right; }
+%fa-columns { content: $fa-var-columns; }
+%fa-unsorted,
+%fa-sort { content: $fa-var-sort; }
+%fa-sort-down,
+%fa-sort-desc { content: $fa-var-sort-desc; }
+%fa-sort-up,
+%fa-sort-asc { content: $fa-var-sort-asc; }
+%fa-envelope { content: $fa-var-envelope; }
+%fa-linkedin { content: $fa-var-linkedin; }
+%fa-rotate-left,
+%fa-undo { content: $fa-var-undo; }
+%fa-legal,
+%fa-gavel { content: $fa-var-gavel; }
+%fa-dashboard,
+%fa-tachometer { content: $fa-var-tachometer; }
+%fa-comment-o { content: $fa-var-comment-o; }
+%fa-comments-o { content: $fa-var-comments-o; }
+%fa-flash,
+%fa-bolt { content: $fa-var-bolt; }
+%fa-sitemap { content: $fa-var-sitemap; }
+%fa-umbrella { content: $fa-var-umbrella; }
+%fa-paste,
+%fa-clipboard { content: $fa-var-clipboard; }
+%fa-lightbulb-o { content: $fa-var-lightbulb-o; }
+%fa-exchange { content: $fa-var-exchange; }
+%fa-cloud-download { content: $fa-var-cloud-download; }
+%fa-cloud-upload { content: $fa-var-cloud-upload; }
+%fa-user-md { content: $fa-var-user-md; }
+%fa-stethoscope { content: $fa-var-stethoscope; }
+%fa-suitcase { content: $fa-var-suitcase; }
+%fa-bell-o { content: $fa-var-bell-o; }
+%fa-coffee { content: $fa-var-coffee; }
+%fa-cutlery { content: $fa-var-cutlery; }
+%fa-file-text-o { content: $fa-var-file-text-o; }
+%fa-building-o { content: $fa-var-building-o; }
+%fa-hospital-o { content: $fa-var-hospital-o; }
+%fa-ambulance { content: $fa-var-ambulance; }
+%fa-medkit { content: $fa-var-medkit; }
+%fa-fighter-jet { content: $fa-var-fighter-jet; }
+%fa-beer { content: $fa-var-beer; }
+%fa-h-square { content: $fa-var-h-square; }
+%fa-plus-square { content: $fa-var-plus-square; }
+%fa-angle-double-left { content: $fa-var-angle-double-left; }
+%fa-angle-double-right { content: $fa-var-angle-double-right; }
+%fa-angle-double-up { content: $fa-var-angle-double-up; }
+%fa-angle-double-down { content: $fa-var-angle-double-down; }
+%fa-angle-left { content: $fa-var-angle-left; }
+%fa-angle-right { content: $fa-var-angle-right; }
+%fa-angle-up { content: $fa-var-angle-up; }
+%fa-angle-down { content: $fa-var-angle-down; }
+%fa-desktop { content: $fa-var-desktop; }
+%fa-laptop { content: $fa-var-laptop; }
+%fa-tablet { content: $fa-var-tablet; }
+%fa-mobile-phone,
+%fa-mobile { content: $fa-var-mobile; }
+%fa-circle-o { content: $fa-var-circle-o; }
+%fa-quote-left { content: $fa-var-quote-left; }
+%fa-quote-right { content: $fa-var-quote-right; }
+%fa-spinner { content: $fa-var-spinner; }
+%fa-circle { content: $fa-var-circle; }
+%fa-mail-reply,
+%fa-reply { content: $fa-var-reply; }
+%fa-github-alt { content: $fa-var-github-alt; }
+%fa-folder-o { content: $fa-var-folder-o; }
+%fa-folder-open-o { content: $fa-var-folder-open-o; }
+%fa-smile-o { content: $fa-var-smile-o; }
+%fa-frown-o { content: $fa-var-frown-o; }
+%fa-meh-o { content: $fa-var-meh-o; }
+%fa-gamepad { content: $fa-var-gamepad; }
+%fa-keyboard-o { content: $fa-var-keyboard-o; }
+%fa-flag-o { content: $fa-var-flag-o; }
+%fa-flag-checkered { content: $fa-var-flag-checkered; }
+%fa-terminal { content: $fa-var-terminal; }
+%fa-code { content: $fa-var-code; }
+%fa-mail-reply-all,
+%fa-reply-all { content: $fa-var-reply-all; }
+%fa-star-half-empty,
+%fa-star-half-full,
+%fa-star-half-o { content: $fa-var-star-half-o; }
+%fa-location-arrow { content: $fa-var-location-arrow; }
+%fa-crop { content: $fa-var-crop; }
+%fa-code-fork { content: $fa-var-code-fork; }
+%fa-unlink,
+%fa-chain-broken { content: $fa-var-chain-broken; }
+%fa-question { content: $fa-var-question; }
+%fa-info { content: $fa-var-info; }
+%fa-exclamation { content: $fa-var-exclamation; }
+%fa-superscript { content: $fa-var-superscript; }
+%fa-subscript { content: $fa-var-subscript; }
+%fa-eraser { content: $fa-var-eraser; }
+%fa-puzzle-piece { content: $fa-var-puzzle-piece; }
+%fa-microphone { content: $fa-var-microphone; }
+%fa-microphone-slash { content: $fa-var-microphone-slash; }
+%fa-shield { content: $fa-var-shield; }
+%fa-calendar-o { content: $fa-var-calendar-o; }
+%fa-fire-extinguisher { content: $fa-var-fire-extinguisher; }
+%fa-rocket { content: $fa-var-rocket; }
+%fa-maxcdn { content: $fa-var-maxcdn; }
+%fa-chevron-circle-left { content: $fa-var-chevron-circle-left; }
+%fa-chevron-circle-right { content: $fa-var-chevron-circle-right; }
+%fa-chevron-circle-up { content: $fa-var-chevron-circle-up; }
+%fa-chevron-circle-down { content: $fa-var-chevron-circle-down; }
+%fa-html5 { content: $fa-var-html5; }
+%fa-css3 { content: $fa-var-css3; }
+%fa-anchor { content: $fa-var-anchor; }
+%fa-unlock-alt { content: $fa-var-unlock-alt; }
+%fa-bullseye { content: $fa-var-bullseye; }
+%fa-ellipsis-h { content: $fa-var-ellipsis-h; }
+%fa-ellipsis-v { content: $fa-var-ellipsis-v; }
+%fa-rss-square { content: $fa-var-rss-square; }
+%fa-play-circle { content: $fa-var-play-circle; }
+%fa-ticket { content: $fa-var-ticket; }
+%fa-minus-square { content: $fa-var-minus-square; }
+%fa-minus-square-o { content: $fa-var-minus-square-o; }
+%fa-level-up { content: $fa-var-level-up; }
+%fa-level-down { content: $fa-var-level-down; }
+%fa-check-square { content: $fa-var-check-square; }
+%fa-pencil-square { content: $fa-var-pencil-square; }
+%fa-external-link-square { content: $fa-var-external-link-square; }
+%fa-share-square { content: $fa-var-share-square; }
+%fa-compass { content: $fa-var-compass; }
+%fa-toggle-down,
+%fa-caret-square-o-down { content: $fa-var-caret-square-o-down; }
+%fa-toggle-up,
+%fa-caret-square-o-up { content: $fa-var-caret-square-o-up; }
+%fa-toggle-right,
+%fa-caret-square-o-right { content: $fa-var-caret-square-o-right; }
+%fa-euro,
+%fa-eur { content: $fa-var-eur; }
+%fa-gbp { content: $fa-var-gbp; }
+%fa-dollar,
+%fa-usd { content: $fa-var-usd; }
+%fa-rupee,
+%fa-inr { content: $fa-var-inr; }
+%fa-cny,
+%fa-rmb,
+%fa-yen,
+%fa-jpy { content: $fa-var-jpy; }
+%fa-ruble,
+%fa-rouble,
+%fa-rub { content: $fa-var-rub; }
+%fa-won,
+%fa-krw { content: $fa-var-krw; }
+%fa-bitcoin,
+%fa-btc { content: $fa-var-btc; }
+%fa-file { content: $fa-var-file; }
+%fa-file-text { content: $fa-var-file-text; }
+%fa-sort-alpha-asc { content: $fa-var-sort-alpha-asc; }
+%fa-sort-alpha-desc { content: $fa-var-sort-alpha-desc; }
+%fa-sort-amount-asc { content: $fa-var-sort-amount-asc; }
+%fa-sort-amount-desc { content: $fa-var-sort-amount-desc; }
+%fa-sort-numeric-asc { content: $fa-var-sort-numeric-asc; }
+%fa-sort-numeric-desc { content: $fa-var-sort-numeric-desc; }
+%fa-thumbs-up { content: $fa-var-thumbs-up; }
+%fa-thumbs-down { content: $fa-var-thumbs-down; }
+%fa-youtube-square { content: $fa-var-youtube-square; }
+%fa-youtube { content: $fa-var-youtube; }
+%fa-xing { content: $fa-var-xing; }
+%fa-xing-square { content: $fa-var-xing-square; }
+%fa-youtube-play { content: $fa-var-youtube-play; }
+%fa-dropbox { content: $fa-var-dropbox; }
+%fa-stack-overflow { content: $fa-var-stack-overflow; }
+%fa-instagram { content: $fa-var-instagram; }
+%fa-flickr { content: $fa-var-flickr; }
+%fa-adn { content: $fa-var-adn; }
+%fa-bitbucket { content: $fa-var-bitbucket; }
+%fa-bitbucket-square { content: $fa-var-bitbucket-square; }
+%fa-tumblr { content: $fa-var-tumblr; }
+%fa-tumblr-square { content: $fa-var-tumblr-square; }
+%fa-long-arrow-down { content: $fa-var-long-arrow-down; }
+%fa-long-arrow-up { content: $fa-var-long-arrow-up; }
+%fa-long-arrow-left { content: $fa-var-long-arrow-left; }
+%fa-long-arrow-right { content: $fa-var-long-arrow-right; }
+%fa-apple { content: $fa-var-apple; }
+%fa-windows { content: $fa-var-windows; }
+%fa-android { content: $fa-var-android; }
+%fa-linux { content: $fa-var-linux; }
+%fa-dribbble { content: $fa-var-dribbble; }
+%fa-skype { content: $fa-var-skype; }
+%fa-foursquare { content: $fa-var-foursquare; }
+%fa-trello { content: $fa-var-trello; }
+%fa-female { content: $fa-var-female; }
+%fa-male { content: $fa-var-male; }
+%fa-gittip,
+%fa-gratipay { content: $fa-var-gratipay; }
+%fa-sun-o { content: $fa-var-sun-o; }
+%fa-moon-o { content: $fa-var-moon-o; }
+%fa-archive { content: $fa-var-archive; }
+%fa-bug { content: $fa-var-bug; }
+%fa-vk { content: $fa-var-vk; }
+%fa-weibo { content: $fa-var-weibo; }
+%fa-renren { content: $fa-var-renren; }
+%fa-pagelines { content: $fa-var-pagelines; }
+%fa-stack-exchange { content: $fa-var-stack-exchange; }
+%fa-arrow-circle-o-right { content: $fa-var-arrow-circle-o-right; }
+%fa-arrow-circle-o-left { content: $fa-var-arrow-circle-o-left; }
+%fa-toggle-left,
+%fa-caret-square-o-left { content: $fa-var-caret-square-o-left; }
+%fa-dot-circle-o { content: $fa-var-dot-circle-o; }
+%fa-wheelchair { content: $fa-var-wheelchair; }
+%fa-vimeo-square { content: $fa-var-vimeo-square; }
+%fa-turkish-lira,
+%fa-try { content: $fa-var-try; }
+%fa-plus-square-o { content: $fa-var-plus-square-o; }
+%fa-space-shuttle { content: $fa-var-space-shuttle; }
+%fa-slack { content: $fa-var-slack; }
+%fa-envelope-square { content: $fa-var-envelope-square; }
+%fa-wordpress { content: $fa-var-wordpress; }
+%fa-openid { content: $fa-var-openid; }
+%fa-institution,
+%fa-bank,
+%fa-university { content: $fa-var-university; }
+%fa-mortar-board,
+%fa-graduation-cap { content: $fa-var-graduation-cap; }
+%fa-yahoo { content: $fa-var-yahoo; }
+%fa-google { content: $fa-var-google; }
+%fa-reddit { content: $fa-var-reddit; }
+%fa-reddit-square { content: $fa-var-reddit-square; }
+%fa-stumbleupon-circle { content: $fa-var-stumbleupon-circle; }
+%fa-stumbleupon { content: $fa-var-stumbleupon; }
+%fa-delicious { content: $fa-var-delicious; }
+%fa-digg { content: $fa-var-digg; }
+%fa-pied-piper { content: $fa-var-pied-piper; }
+%fa-pied-piper-alt { content: $fa-var-pied-piper-alt; }
+%fa-drupal { content: $fa-var-drupal; }
+%fa-joomla { content: $fa-var-joomla; }
+%fa-language { content: $fa-var-language; }
+%fa-fax { content: $fa-var-fax; }
+%fa-building { content: $fa-var-building; }
+%fa-child { content: $fa-var-child; }
+%fa-paw { content: $fa-var-paw; }
+%fa-spoon { content: $fa-var-spoon; }
+%fa-cube { content: $fa-var-cube; }
+%fa-cubes { content: $fa-var-cubes; }
+%fa-behance { content: $fa-var-behance; }
+%fa-behance-square { content: $fa-var-behance-square; }
+%fa-steam { content: $fa-var-steam; }
+%fa-steam-square { content: $fa-var-steam-square; }
+%fa-recycle { content: $fa-var-recycle; }
+%fa-automobile,
+%fa-car { content: $fa-var-car; }
+%fa-cab,
+%fa-taxi { content: $fa-var-taxi; }
+%fa-tree { content: $fa-var-tree; }
+%fa-spotify { content: $fa-var-spotify; }
+%fa-deviantart { content: $fa-var-deviantart; }
+%fa-soundcloud { content: $fa-var-soundcloud; }
+%fa-database { content: $fa-var-database; }
+%fa-file-pdf-o { content: $fa-var-file-pdf-o; }
+%fa-file-word-o { content: $fa-var-file-word-o; }
+%fa-file-excel-o { content: $fa-var-file-excel-o; }
+%fa-file-powerpoint-o { content: $fa-var-file-powerpoint-o; }
+%fa-file-photo-o,
+%fa-file-picture-o,
+%fa-file-image-o { content: $fa-var-file-image-o; }
+%fa-file-zip-o,
+%fa-file-archive-o { content: $fa-var-file-archive-o; }
+%fa-file-sound-o,
+%fa-file-audio-o { content: $fa-var-file-audio-o; }
+%fa-file-movie-o,
+%fa-file-video-o { content: $fa-var-file-video-o; }
+%fa-file-code-o { content: $fa-var-file-code-o; }
+%fa-vine { content: $fa-var-vine; }
+%fa-codepen { content: $fa-var-codepen; }
+%fa-jsfiddle { content: $fa-var-jsfiddle; }
+%fa-life-bouy,
+%fa-life-buoy,
+%fa-life-saver,
+%fa-support,
+%fa-life-ring { content: $fa-var-life-ring; }
+%fa-circle-o-notch { content: $fa-var-circle-o-notch; }
+%fa-ra,
+%fa-rebel { content: $fa-var-rebel; }
+%fa-ge,
+%fa-empire { content: $fa-var-empire; }
+%fa-git-square { content: $fa-var-git-square; }
+%fa-git { content: $fa-var-git; }
+%fa-y-combinator-square,
+%fa-yc-square,
+%fa-hacker-news { content: $fa-var-hacker-news; }
+%fa-tencent-weibo { content: $fa-var-tencent-weibo; }
+%fa-qq { content: $fa-var-qq; }
+%fa-wechat,
+%fa-weixin { content: $fa-var-weixin; }
+%fa-send,
+%fa-paper-plane { content: $fa-var-paper-plane; }
+%fa-send-o,
+%fa-paper-plane-o { content: $fa-var-paper-plane-o; }
+%fa-history { content: $fa-var-history; }
+%fa-circle-thin { content: $fa-var-circle-thin; }
+%fa-header { content: $fa-var-header; }
+%fa-paragraph { content: $fa-var-paragraph; }
+%fa-sliders { content: $fa-var-sliders; }
+%fa-share-alt { content: $fa-var-share-alt; }
+%fa-share-alt-square { content: $fa-var-share-alt-square; }
+%fa-bomb { content: $fa-var-bomb; }
+%fa-soccer-ball-o,
+%fa-futbol-o { content: $fa-var-futbol-o; }
+%fa-tty { content: $fa-var-tty; }
+%fa-binoculars { content: $fa-var-binoculars; }
+%fa-plug { content: $fa-var-plug; }
+%fa-slideshare { content: $fa-var-slideshare; }
+%fa-twitch { content: $fa-var-twitch; }
+%fa-yelp { content: $fa-var-yelp; }
+%fa-newspaper-o { content: $fa-var-newspaper-o; }
+%fa-wifi { content: $fa-var-wifi; }
+%fa-calculator { content: $fa-var-calculator; }
+%fa-paypal { content: $fa-var-paypal; }
+%fa-google-wallet { content: $fa-var-google-wallet; }
+%fa-cc-visa { content: $fa-var-cc-visa; }
+%fa-cc-mastercard { content: $fa-var-cc-mastercard; }
+%fa-cc-discover { content: $fa-var-cc-discover; }
+%fa-cc-amex { content: $fa-var-cc-amex; }
+%fa-cc-paypal { content: $fa-var-cc-paypal; }
+%fa-cc-stripe { content: $fa-var-cc-stripe; }
+%fa-bell-slash { content: $fa-var-bell-slash; }
+%fa-bell-slash-o { content: $fa-var-bell-slash-o; }
+%fa-trash { content: $fa-var-trash; }
+%fa-copyright { content: $fa-var-copyright; }
+%fa-at { content: $fa-var-at; }
+%fa-eyedropper { content: $fa-var-eyedropper; }
+%fa-paint-brush { content: $fa-var-paint-brush; }
+%fa-birthday-cake { content: $fa-var-birthday-cake; }
+%fa-area-chart { content: $fa-var-area-chart; }
+%fa-pie-chart { content: $fa-var-pie-chart; }
+%fa-line-chart { content: $fa-var-line-chart; }
+%fa-lastfm { content: $fa-var-lastfm; }
+%fa-lastfm-square { content: $fa-var-lastfm-square; }
+%fa-toggle-off { content: $fa-var-toggle-off; }
+%fa-toggle-on { content: $fa-var-toggle-on; }
+%fa-bicycle { content: $fa-var-bicycle; }
+%fa-bus { content: $fa-var-bus; }
+%fa-ioxhost { content: $fa-var-ioxhost; }
+%fa-angellist { content: $fa-var-angellist; }
+%fa-cc { content: $fa-var-cc; }
+%fa-shekel,
+%fa-sheqel,
+%fa-ils { content: $fa-var-ils; }
+%fa-meanpath { content: $fa-var-meanpath; }
+%fa-buysellads { content: $fa-var-buysellads; }
+%fa-connectdevelop { content: $fa-var-connectdevelop; }
+%fa-dashcube { content: $fa-var-dashcube; }
+%fa-forumbee { content: $fa-var-forumbee; }
+%fa-leanpub { content: $fa-var-leanpub; }
+%fa-sellsy { content: $fa-var-sellsy; }
+%fa-shirtsinbulk { content: $fa-var-shirtsinbulk; }
+%fa-simplybuilt { content: $fa-var-simplybuilt; }
+%fa-skyatlas { content: $fa-var-skyatlas; }
+%fa-cart-plus { content: $fa-var-cart-plus; }
+%fa-cart-arrow-down { content: $fa-var-cart-arrow-down; }
+%fa-diamond { content: $fa-var-diamond; }
+%fa-ship { content: $fa-var-ship; }
+%fa-user-secret { content: $fa-var-user-secret; }
+%fa-motorcycle { content: $fa-var-motorcycle; }
+%fa-street-view { content: $fa-var-street-view; }
+%fa-heartbeat { content: $fa-var-heartbeat; }
+%fa-venus { content: $fa-var-venus; }
+%fa-mars { content: $fa-var-mars; }
+%fa-mercury { content: $fa-var-mercury; }
+%fa-intersex,
+%fa-transgender { content: $fa-var-transgender; }
+%fa-transgender-alt { content: $fa-var-transgender-alt; }
+%fa-venus-double { content: $fa-var-venus-double; }
+%fa-mars-double { content: $fa-var-mars-double; }
+%fa-venus-mars { content: $fa-var-venus-mars; }
+%fa-mars-stroke { content: $fa-var-mars-stroke; }
+%fa-mars-stroke-v { content: $fa-var-mars-stroke-v; }
+%fa-mars-stroke-h { content: $fa-var-mars-stroke-h; }
+%fa-neuter { content: $fa-var-neuter; }
+%fa-genderless { content: $fa-var-genderless; }
+%fa-facebook-official { content: $fa-var-facebook-official; }
+%fa-pinterest-p { content: $fa-var-pinterest-p; }
+%fa-whatsapp { content: $fa-var-whatsapp; }
+%fa-server { content: $fa-var-server; }
+%fa-user-plus { content: $fa-var-user-plus; }
+%fa-user-times { content: $fa-var-user-times; }
+%fa-hotel,
+%fa-bed { content: $fa-var-bed; }
+%fa-viacoin { content: $fa-var-viacoin; }
+%fa-train { content: $fa-var-train; }
+%fa-subway { content: $fa-var-subway; }
+%fa-medium { content: $fa-var-medium; }
+%fa-yc,
+%fa-y-combinator { content: $fa-var-y-combinator; }
+%fa-optin-monster { content: $fa-var-optin-monster; }
+%fa-opencart { content: $fa-var-opencart; }
+%fa-expeditedssl { content: $fa-var-expeditedssl; }
+%fa-battery-4,
+%fa-battery-full { content: $fa-var-battery-full; }
+%fa-battery-3,
+%fa-battery-three-quarters { content: $fa-var-battery-three-quarters; }
+%fa-battery-2,
+%fa-battery-half { content: $fa-var-battery-half; }
+%fa-battery-1,
+%fa-battery-quarter { content: $fa-var-battery-quarter; }
+%fa-battery-0,
+%fa-battery-empty { content: $fa-var-battery-empty; }
+%fa-mouse-pointer { content: $fa-var-mouse-pointer; }
+%fa-i-cursor { content: $fa-var-i-cursor; }
+%fa-object-group { content: $fa-var-object-group; }
+%fa-object-ungroup { content: $fa-var-object-ungroup; }
+%fa-sticky-note { content: $fa-var-sticky-note; }
+%fa-sticky-note-o { content: $fa-var-sticky-note-o; }
+%fa-cc-jcb { content: $fa-var-cc-jcb; }
+%fa-cc-diners-club { content: $fa-var-cc-diners-club; }
+%fa-clone { content: $fa-var-clone; }
+%fa-balance-scale { content: $fa-var-balance-scale; }
+%fa-hourglass-o { content: $fa-var-hourglass-o; }
+%fa-hourglass-1,
+%fa-hourglass-start { content: $fa-var-hourglass-start; }
+%fa-hourglass-2,
+%fa-hourglass-half { content: $fa-var-hourglass-half; }
+%fa-hourglass-3,
+%fa-hourglass-end { content: $fa-var-hourglass-end; }
+%fa-hourglass { content: $fa-var-hourglass; }
+%fa-hand-grab-o,
+%fa-hand-rock-o { content: $fa-var-hand-rock-o; }
+%fa-hand-stop-o,
+%fa-hand-paper-o { content: $fa-var-hand-paper-o; }
+%fa-hand-scissors-o { content: $fa-var-hand-scissors-o; }
+%fa-hand-lizard-o { content: $fa-var-hand-lizard-o; }
+%fa-hand-spock-o { content: $fa-var-hand-spock-o; }
+%fa-hand-pointer-o { content: $fa-var-hand-pointer-o; }
+%fa-hand-peace-o { content: $fa-var-hand-peace-o; }
+%fa-trademark { content: $fa-var-trademark; }
+%fa-registered { content: $fa-var-registered; }
+%fa-creative-commons { content: $fa-var-creative-commons; }
+%fa-gg { content: $fa-var-gg; }
+%fa-gg-circle { content: $fa-var-gg-circle; }
+%fa-tripadvisor { content: $fa-var-tripadvisor; }
+%fa-odnoklassniki { content: $fa-var-odnoklassniki; }
+%fa-odnoklassniki-square { content: $fa-var-odnoklassniki-square; }
+%fa-get-pocket { content: $fa-var-get-pocket; }
+%fa-wikipedia-w { content: $fa-var-wikipedia-w; }
+%fa-safari { content: $fa-var-safari; }
+%fa-chrome { content: $fa-var-chrome; }
+%fa-firefox { content: $fa-var-firefox; }
+%fa-opera { content: $fa-var-opera; }
+%fa-internet-explorer { content: $fa-var-internet-explorer; }
+%fa-tv,
+%fa-television { content: $fa-var-television; }
+%fa-contao { content: $fa-var-contao; }
+%fa-500px { content: $fa-var-500px; }
+%fa-amazon { content: $fa-var-amazon; }
+%fa-calendar-plus-o { content: $fa-var-calendar-plus-o; }
+%fa-calendar-minus-o { content: $fa-var-calendar-minus-o; }
+%fa-calendar-times-o { content: $fa-var-calendar-times-o; }
+%fa-calendar-check-o { content: $fa-var-calendar-check-o; }
+%fa-industry { content: $fa-var-industry; }
+%fa-map-pin { content: $fa-var-map-pin; }
+%fa-map-signs { content: $fa-var-map-signs; }
+%fa-map-o { content: $fa-var-map-o; }
+%fa-map { content: $fa-var-map; }
+%fa-commenting { content: $fa-var-commenting; }
+%fa-commenting-o { content: $fa-var-commenting-o; }
+%fa-houzz { content: $fa-var-houzz; }
+%fa-vimeo { content: $fa-var-vimeo; }
+%fa-black-tie { content: $fa-var-black-tie; }
+%fa-fonticons { content: $fa-var-fonticons; }
+
+
