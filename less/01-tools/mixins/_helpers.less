@@ -1,0 +1,40 @@
+// Esconder texto
+///
+/// @group itcss-skeleton-scss
+/// @author Hemerson Vianna
+///
+/// @access public
+///
+@mixin x-text-hide() {
+    font-size:0;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+
+// Clearfix
+///
+/// @group itcss-skeleton-scss
+/// @author Hemerson Vianna
+///
+/// @access public
+///
+@mixin x-clearfix() {
+  &:before, &:after { content: " "; display: table; }
+  &:after { clear: both; }
+}
+
+// Opacity
+///
+/// @group itcss-skeleton-scss
+/// @author Daniele Falcao
+///
+/// @access public
+///
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  // IE8 filter
+  $opacity-ie: ($opacity * 100);
+  filter: alpha(opacity=$opacity-ie);
+}
