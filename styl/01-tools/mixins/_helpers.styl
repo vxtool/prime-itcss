@@ -38,3 +38,110 @@
   $opacity-ie: ($opacity * 100);
   filter: alpha(opacity=$opacity-ie);
 }
+
+
+// REM Fallback
+///
+/// @author Hemerson Vianna
+///
+/// @access public
+///
+@mixin x-rem-fallback($property, $values...) {
+  // html {font-size: 62.5%;}
+  $max: length($values);
+  $pxValues: '';
+  $remValues: '';
+
+  @for $i from 1 through $max {
+    $value: x-strip-unit(nth($values, $i));
+    $pxValues: #{$pxValues + $value*10}px;
+
+    @if $i < $max {
+      $pxValues: #{$pxValues + " "};
+    }
+  } 
+
+  @for $i from 1 through $max {
+    $value: strip-unit(nth($values, $i));
+    $remValues: #{$remValues + $value}rem;
+
+    @if $i < $max {
+      $remValues: #{$remValues + " "};
+    }
+  } 
+  
+  #{$property}: $pxValues; 
+  #{$property}: $remValues; 
+}
+
+// Keyframes
+///
+/// @author Hemerson Vianna
+///
+/// @access public
+///
+@mixin x-keyframes($animationName) {
+  @-webkit-keyframes #{$animationName} {
+      $browser: '-webkit-' !global;
+      @content;
+  }
+  @-moz-keyframes #{$animationName} {
+      $browser: '-moz-' !global;
+      @content;
+  }
+  @-o-keyframes #{$animationName} {
+      $browser: '-o-' !global;
+      @content;
+  }
+  @-ms-keyframes #{$animationName} {
+      $browser: '-ms-' !global;
+      @content;
+  }
+  @keyframes #{$animationName} {
+      $browser: '' !global;
+      @content;
+  }
+} $browser: null;
+
+/// Mixin to prefix a property
+/// @author Hemerson Vianna
+/// @param {String} $property - Property name
+/// @param {*} $value - Property value
+/// @param {List} $prefixes (()) - List of prefixes to print
+///
+/// @access public
+///
+@mixin x-prefix($property, $value, $prefixes: (webkit moz o ms)) {
+  @each $prefix in $prefixes {
+    #{'-' + $prefix + '-' + $property}: $value;
+  }
+ 
+  // Output standard non-prefixed declaration
+  #{$property}: $value;
+}
+
+// Transition
+///
+/// @author Hemerson Vianna
+///
+/// @access public
+///
+@mixin x-transition($values...) { 
+    $transitions: ();
+    @each $declaration in $values {
+        $prop: nth($declaration, 1);
+        $prop-opts: ();
+        $length: length($declaration);
+        @for $i from 2 through $length {
+            $prop-opts: append($prop-opts, nth($declaration, $i));   
+        }
+        $trans: ($prop, $prop-opts);
+        $transitions: append($transitions, $trans, comma);
+    }
+      
+    -webkit-transition: x-trans-prefix($transitions, webkit);
+    -moz-transition: x-trans-prefix($transitions, moz);
+    -o-transition: x-trans-prefix($transitions, o);
+    -ms-transition: x-trans-prefix($transitions, ms);
+    transition: $values;
+}
