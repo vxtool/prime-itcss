@@ -1,23 +1,17 @@
 // Icone
 /// 
-/// @group itcss-skeleton-scss
 /// @author Hemerson Vianna
 /// 
 /// @access public
 ///
-@mixin x-icon( $name: "", $position: "left" ) {
-  @if $position == "left" {
-    &:before {
-      @extend %fa;
-      @extend %#{$name};
-      margin-right: 10px;
-    }
-  } @else if $position == "right" {
-    &:after {
-      @extend %fa;
-      @extend %#{$name};
-      margin-left: 10px;
-    }
-  }
-  
-}
+x-icon($name = "", $position = "left")
+  if $position == "left"
+    &:before
+      @extend $fa
+      @extend $#{$name}
+      margin-right: 10px
+  else if $position == "right"
+    &:after
+      @extend $fa
+      @extend $#{$name}
+      margin-left: 10px

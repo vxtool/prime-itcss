@@ -1,43 +1,40 @@
 // Esconder texto
 ///
-/// @group itcss-skeleton-scss
 /// @author Hemerson Vianna
 ///
 /// @access public
 ///
-@mixin x-text-hide() {
-    font-size:0;
-    color: transparent;
-    text-shadow: none;
-    background-color: transparent;
-    border: 0;
-}
+x-text-hide()
+  font-size: 0
+  color: transparent
+  text-shadow: none
+  background-color: transparent
+  border: 0
 
 // Clearfix
 ///
-/// @group itcss-skeleton-scss
 /// @author Hemerson Vianna
 ///
 /// @access public
 ///
-@mixin x-clearfix() {
-  &:before, &:after { content: " "; display: table; }
-  &:after { clear: both; }
-}
+x-clearfix()
+  &:before, &:after
+    content: " "
+    display: table
+  &:after
+    clear: both
 
 // Opacity
 ///
-/// @group itcss-skeleton-scss
-/// @author Daniele Falcao
+/// @author Hemerson Vianna
 ///
 /// @access public
 ///
-@mixin opacity($opacity) {
-  opacity: $opacity;
+opacity($opacity)
+  opacity: $opacity
   // IE8 filter
-  $opacity-ie: ($opacity * 100);
-  filter: alpha(opacity=$opacity-ie);
-}
+  $opacity-ie = $opacity * 100
+  filter: alpha(opacity = $opacity-ie)
 
 
 // REM Fallback
@@ -80,28 +77,23 @@
 ///
 /// @access public
 ///
-@mixin x-keyframes($animationName) {
-  @-webkit-keyframes #{$animationName} {
-      $browser: '-webkit-' !global;
-      @content;
-  }
-  @-moz-keyframes #{$animationName} {
-      $browser: '-moz-' !global;
-      @content;
-  }
-  @-o-keyframes #{$animationName} {
-      $browser: '-o-' !global;
-      @content;
-  }
-  @-ms-keyframes #{$animationName} {
-      $browser: '-ms-' !global;
-      @content;
-  }
-  @keyframes #{$animationName} {
-      $browser: '' !global;
-      @content;
-  }
-} $browser: null;
+x-keyframes($animationName)
+  @-webkit-keyframes
+    $browser = "-webkit-"
+    {block}
+  @-moz-keyframes
+    $browser = "-moz-"
+    {block}
+  @-o-keyframes
+    $browser = "-o-"
+    {block}
+  @-ms-keyframes
+    $browser = "-ms-"
+    {block}
+  @keyframes
+    $browser = ""
+    {block}
+$browser = null
 
 /// Mixin to prefix a property
 /// @author Hemerson Vianna
@@ -111,14 +103,11 @@
 ///
 /// @access public
 ///
-@mixin x-prefix($property, $value, $prefixes: (webkit moz o ms)) {
-  @each $prefix in $prefixes {
-    #{'-' + $prefix + '-' + $property}: $value;
-  }
- 
+x-prefix($property, $value, $prefixes = webkit moz o ms)
+  for $prefix in $prefixes
+    {("-" $prefix "-") $property)}: $value
   // Output standard non-prefixed declaration
-  #{$property}: $value;
-}
+  {$property}: $value
 
 // Transition
 ///

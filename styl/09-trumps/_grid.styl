@@ -1,53 +1,42 @@
 // Grid
 ///
-/// @group itcss-skeleton-scss
 /// @author Hemerson Vianna
 ///
 /// @access public
 ///
-[class*="col-"] {
-    display: inline;
-    float: left;
-    padding-left: $padding-width;
-    padding-right: $padding-width;
-}
-
+[class*="col-"]
+  display: inline
+  float: left
+  padding-left: $padding-width
+  padding-right: $padding-width
 // Extra small 320
-@for $i from 1 through $total-columns {
-    .col-xs-#{$i} { width: x-gridsystem-width($i); }
-}
-
-@for $i from 1 through $total-columns {
-    .col-xs-offset-#{$i} { margin-left: x-gridsystem-width($i); }
-}
-
+for $i in (1)..($total-columns)
+  .col-xs-{$i}
+    width: x-gridsystem-width($i)
+for $i in (1)..($total-columns)
+  .col-xs-offset-{$i}
+    margin-left: x-gridsystem-width($i)
 // Small 768
-@media(min-width:$screen-tablet-portrait) {
-  @for $i from 1 through $total-columns {
-    .col-sm-#{$i} { width: x-gridsystem-width($i); }
-  }
-
-  @for $i from 1 through $total-columns {
-    .col-sm-offset-#{$i} { margin-left: x-gridsystem-width($i); }
-  }
-}
+@media (min-width: $screen-tablet-portrait)
+  for $i in (1)..($total-columns)
+    .col-sm-{$i}
+      width: x-gridsystem-width($i)
+  for $i in (1)..($total-columns)
+    .col-sm-offset-{$i}
+      margin-left: x-gridsystem-width($i)
 // Medium 992
-@media(min-width:$screen-desktop) {
-  @for $i from 1 through $total-columns {
-    .col-md-#{$i} { width: x-gridsystem-width($i); }
-  }
-
-  @for $i from 1 through $total-columns {
-    .col-md-offset-#{$i} { margin-left: x-gridsystem-width($i); }
-  }
-}
+@media (min-width: $screen-desktop)
+  for $i in (1)..($total-columns)
+    .col-md-{$i}
+      width: x-gridsystem-width($i)
+  for $i in (1)..($total-columns)
+    .col-md-offset-{$i}
+      margin-left: x-gridsystem-width($i)
 // Large 1300
-@media(min-width:$screen-wide) {
-  @for $i from 1 through $total-columns {
-    .col-lg-#{$i} { width: x-gridsystem-width($i); }
-  }
-
-  @for $i from 1 through $total-columns {
-    .col-lg-offset-#{$i} { margin-left: x-gridsystem-width($i); }
-  }
-}
+@media (min-width: $screen-wide)
+  for $i in (1)..($total-columns)
+    .col-lg-{$i}
+      width: x-gridsystem-width($i)
+  for $i in (1)..($total-columns)
+    .col-lg-offset-{$i}
+      margin-left: x-gridsystem-width($i)

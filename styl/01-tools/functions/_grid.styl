@@ -1,19 +1,16 @@
 // Largura baseada no grid
 /// 
-/// @group itcss-skeleton-scss
 /// @author Hemerson Vianna
 /// 
 /// @param {number} $columns
 ///
 /// @access public
 ///
-@function x-gridsystem-width($columns) {
-	@return ($total-width / $total-columns) * $columns;
-}
+x-gridsystem-width($columns)
+  $total-width / $total-columns * $columns
 
 // Calculo do grid
 /// 
-/// @group itcss-skeleton-scss
 /// @author Hemerson Vianna
 /// 
 /// @param {number} $colNumber
@@ -21,6 +18,5 @@
 ///
 /// @access public
 ///
-@function x-grid-calc($colNumber, $totalColumns) {
-  @return percentage(($colNumber / $totalColumns));
-}
+x-grid-calc($colNumber, $totalColumns)
+  calc($colNumber / $totalColumns)

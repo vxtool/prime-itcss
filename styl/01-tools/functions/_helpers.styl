@@ -1,0 +1,38 @@
+// Strip unit
+///
+/// @author Hemerson Vianna
+///
+/// @access public
+///
+x-strip-unit($num)
+  $num / ($num * 0 + 1)
+
+// Prefix
+///
+/// @author Hemerson Vianna
+///
+/// @access public
+///
+x-prefix($property, $prefixes = webkit moz o ms)
+  $vendor-prefixed-properties = transform background-clip background-size
+  $result = ()
+  for $prefix in $prefixes
+    if index($vendor-prefixed-properties, $property)
+      $property = -#{$prefix}-#{$property}
+    $result = push($result, $property)
+  $result
+
+// Transition prefix
+///
+/// @author Hemerson Vianna
+///
+/// @access public
+///
+x-trans-prefix($transition, $prefix = moz)
+  $prefixed = ()
+  for $trans in $transition
+    $prop-name = unit($trans, 1)
+    $vendor-prop-name = x-prefix($prop-name, $prefix)
+    $prop-vals = unit($trans, 2)
+    $prefixed = push($prefixed, $vendor-prop-name $prop-vals, comma)
+  $prefixed
