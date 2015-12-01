@@ -5,8 +5,8 @@
 /// @access public
 ///
 
-@function x-strip-unit($num) {
-  @return $num / ($num * 0 + 1);
+@function x-strip-unit(@num) {
+  @return @num / (@num * 0 + 1);
 }
 
 // Prefix
@@ -15,16 +15,16 @@
 ///
 /// @access public
 ///
-@function x-prefix($property, $prefixes: (webkit moz o ms)) {
-    $vendor-prefixed-properties: transform background-clip background-size;
-    $result: ();
-    @each $prefix in $prefixes {
-       @if index($vendor-prefixed-properties, $property) {
-         $property: -#{$prefix}-#{$property}
+@function x-prefix(@property, @prefixes: (webkit moz o ms)) {
+    @vendor-prefixed-properties: transform background-clip background-size;
+    @result: ();
+    @each @prefix in @prefixes {
+       @if index(@vendor-prefixed-properties, @property) {
+         @property: -@{@prefix}-@{@property}
        }
-       $result: append($result, $property);
+       @result: append(@result, @property);
     }
-    @return $result;
+    @return @result;
 }
 
 // Transition prefix
@@ -33,14 +33,14 @@
 ///
 /// @access public
 ///
-@function x-trans-prefix($transition, $prefix: moz) {
-    $prefixed: ();
-    @each $trans in $transition {
-        $prop-name: nth($trans, 1);
-        $vendor-prop-name: x-prefix($prop-name, $prefix);
-        $prop-vals: nth($trans, 2);
-        $prefixed: append($prefixed, ($vendor-prop-name $prop-vals), comma);
+@function x-trans-prefix(@transition, @prefix: moz) {
+    @prefixed: ();
+    @each @trans in @transition {
+        @prop-name: nth(@trans, 1);
+        @vendor-prop-name: x-prefix(@prop-name, @prefix);
+        @prop-vals: nth(@trans, 2);
+        @prefixed: append(@prefixed, (@vendor-prop-name @prop-vals), comma);
     }
     
-    @return $prefixed;
+    @return @prefixed;
 }
