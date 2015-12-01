@@ -1,18 +1,18 @@
 // Strip unit
-///
-/// @author Hemerson Vianna
-///
-/// @access public
-///
+//
+// / @author Hemerson Vianna
+//
+// / @access public
+// /
 x-strip-unit($num)
   $num / ($num * 0 + 1)
-
+  
 // Prefix
-///
-/// @author Hemerson Vianna
-///
-/// @access public
-///
+//
+// / @author Hemerson Vianna
+//
+// / @access public
+// /
 x-prefix($property, $prefixes = webkit moz o ms)
   $vendor-prefixed-properties = transform background-clip background-size
   $result = ()
@@ -21,13 +21,13 @@ x-prefix($property, $prefixes = webkit moz o ms)
       $property = -#{$prefix}-#{$property}
     $result = push($result, $property)
   $result
-
+    
 // Transition prefix
-///
-/// @author Hemerson Vianna
-///
-/// @access public
-///
+//
+// / @author Hemerson Vianna
+//
+// / @access public
+// /
 x-trans-prefix($transition, $prefix = moz)
   $prefixed = ()
   for $trans in $transition

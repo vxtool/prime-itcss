@@ -1,14 +1,15 @@
 // Grid
-///
-/// @author Hemerson Vianna
-///
-/// @access public
-///
+//
+// / @author Hemerson Vianna
+//
+// / @access public
+// /
 [class*="col-"]
   display: inline
   float: left
   padding-left: $padding-width
   padding-right: $padding-width
+  
 // Extra small 320
 for $i in (1)..($total-columns)
   .col-xs-{$i}
@@ -16,6 +17,7 @@ for $i in (1)..($total-columns)
 for $i in (1)..($total-columns)
   .col-xs-offset-{$i}
     margin-left: x-gridsystem-width($i)
+    
 // Small 768
 @media (min-width: $screen-tablet-portrait)
   for $i in (1)..($total-columns)
@@ -24,6 +26,7 @@ for $i in (1)..($total-columns)
   for $i in (1)..($total-columns)
     .col-sm-offset-{$i}
       margin-left: x-gridsystem-width($i)
+      
 // Medium 992
 @media (min-width: $screen-desktop)
   for $i in (1)..($total-columns)
@@ -32,6 +35,7 @@ for $i in (1)..($total-columns)
   for $i in (1)..($total-columns)
     .col-md-offset-{$i}
       margin-left: x-gridsystem-width($i)
+      
 // Large 1300
 @media (min-width: $screen-wide)
   for $i in (1)..($total-columns)

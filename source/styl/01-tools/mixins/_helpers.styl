@@ -1,82 +1,71 @@
 // Esconder texto
-///
-/// @author Hemerson Vianna
-///
-/// @access public
-///
+//
+// / @author Hemerson Vianna
+//
+// / @access public
+// /
 x-text-hide()
   font-size: 0
   color: transparent
   text-shadow: none
   background-color: transparent
   border: 0
-
+  
 // Clearfix
-///
-/// @author Hemerson Vianna
-///
-/// @access public
-///
+//
+// / @author Hemerson Vianna
+//
+// / @access public
+// /
 x-clearfix()
   &:before, &:after
     content: " "
     display: table
   &:after
     clear: both
-
+    
 // Opacity
-///
-/// @author Hemerson Vianna
-///
-/// @access public
-///
+//
+// / @author Daniele Falcao
+//
+// / @access public
+// /
 opacity($opacity)
   opacity: $opacity
   // IE8 filter
   $opacity-ie = $opacity * 100
   filter: alpha(opacity = $opacity-ie)
-
-
-// REM Fallback
-///
-/// @author Hemerson Vianna
-///
-/// @access public
-///
-@mixin x-rem-fallback($property, $values...) {
-  // html {font-size: 62.5%;}
-  $max: length($values);
-  $pxValues: '';
-  $remValues: '';
-
-  @for $i from 1 through $max {
-    $value: x-strip-unit(nth($values, $i));
-    $pxValues: #{$pxValues + $value*10}px;
-
-    @if $i < $max {
-      $pxValues: #{$pxValues + " "};
-    }
-  } 
-
-  @for $i from 1 through $max {
-    $value: strip-unit(nth($values, $i));
-    $remValues: #{$remValues + $value}rem;
-
-    @if $i < $max {
-      $remValues: #{$remValues + " "};
-    }
-  } 
   
-  #{$property}: $pxValues; 
-  #{$property}: $remValues; 
-}
-
+// REM Fallback
+//
+// / @author Hemerson Vianna
+//
+// / @access public
+// /
+x-rem-fallback($property)
+  // html {font-size: 62.5%;}
+  $max = length($values)
+  $pxValues = ""
+  $remValues = ""
+  for $i in (1)..($max)
+    $value = x-strip-unit(unit($values, $i))
+    $pxValues = #{$pxValues + $value * 10}px
+    if $i < $max
+      $pxValues = #{$pxValues + " "}
+  for $i in (1)..($max)
+    $value = strip-unit(unit($values, $i))
+    $remValues = #{$remValues + $value}rem
+    if $i < $max
+      $remValues = #{$remValues + " "}
+  {(interpolation nil $property nil)}: $pxValues
+  {(interpolation nil $property nil)}: $remValues
+  
 // Keyframes
-///
-/// @author Hemerson Vianna
-///
-/// @access public
-///
+//
+// / @author Hemerson Vianna
+//
+// / @access public
+// /
 x-keyframes($animationName)
   @-webkit-keyframes
     $browser = "-webkit-"
@@ -96,41 +85,37 @@ x-keyframes($animationName)
 $browser = null
 
 /// Mixin to prefix a property
-/// @author Hemerson Vianna
-/// @param {String} $property - Property name
-/// @param {*} $value - Property value
-/// @param {List} $prefixes (()) - List of prefixes to print
-///
-/// @access public
-///
+// / @author Hemerson Vianna
+// / @param {String} $property - Property name
+// / @param {*} $value - Property value
+// / @param {List} $prefixes (()) - List of prefixes to print
+//
+// / @access public
+// /
 x-prefix($property, $value, $prefixes = webkit moz o ms)
   for $prefix in $prefixes
-    {("-" $prefix "-") $property)}: $value
+    {(interpolation nil (:plus (:plus (:plus "-" $prefix) "-") $property) nil)}: $value
   // Output standard non-prefixed declaration
-  {$property}: $value
-
+  {(interpolation nil $property nil)}: $value
+  
 // Transition
-///
-/// @author Hemerson Vianna
-///
-/// @access public
-///
-@mixin x-transition($values...) { 
-    $transitions: ();
-    @each $declaration in $values {
-        $prop: nth($declaration, 1);
-        $prop-opts: ();
-        $length: length($declaration);
-        @for $i from 2 through $length {
-            $prop-opts: append($prop-opts, nth($declaration, $i));   
-        }
-        $trans: ($prop, $prop-opts);
-        $transitions: append($transitions, $trans, comma);
-    }
-      
-    -webkit-transition: x-trans-prefix($transitions, webkit);
-    -moz-transition: x-trans-prefix($transitions, moz);
-    -o-transition: x-trans-prefix($transitions, o);
-    -ms-transition: x-trans-prefix($transitions, ms);
-    transition: $values;
-}
+//
+// / @author Hemerson Vianna
+//
+// / @access public
+// /
+x-transition()
+  $transitions = ()
+  for $declaration in $values
+    $prop = unit($declaration, 1)
+    $prop-opts = ()
+    $length = length($declaration)
+    for $i in (2)..($length)
+      $prop-opts = push($prop-opts, nth($declaration, $i))
+    $trans = $prop, $prop-opts
+    $transitions = push($transitions, $trans, comma)
+  -webkit-transition: x-trans-prefix($transitions, webkit)
+  -moz-transition: x-trans-prefix($transitions, moz)
+  -o-transition: x-trans-prefix($transitions, o)
+  -ms-transition: x-trans-prefix($transitions, ms)
+  transition: $values

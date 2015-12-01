@@ -1,15 +1,15 @@
 // Font face
-/// 
-/// @author Hemerson Vianna
-/// 
-/// @param {string} $style-name
-/// @param {string} $file
-/// @param {string} $family
-/// @param {string} $category
-/// @param {number} $weight
-///
-/// @access public
-///
+// /
+// / @author Hemerson Vianna
+// /
+// / @param {string} $style-name
+// / @param {string} $file
+// / @param {string} $family
+// / @param {string} $category
+// / @param {number} $weight
+//
+// / @access public
+// /
 x-font-face($style-name, $file, $family, $category = "", $weight = 400)
   $filepath = "../fonts/" + $family + "/" + $file
   @font-face
@@ -25,15 +25,16 @@ x-font-face($style-name, $file, $family, $category = "", $weight = 400)
       font-family: {$style-name}
       src: url($filepath + ".svg#" + $style-name + "") format("svg")
       font-weight: $weight
-
+      
+      
 // Font size
-/// 
-/// @author Hemerson Vianna
-/// 
-/// @param {number} $sizeValue
-///
-/// @access public
-///
+// /
+// / @author Hemerson Vianna
+// /
+// / @param {number} $sizeValue
+//
+// / @access public
+// /
 x-font-size($sizeValue = 1.5)
   font-size: ($sizeValue * 10 + px)
   font-size: ($sizeValue + rem)
