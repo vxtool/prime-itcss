@@ -40,13 +40,13 @@ Lembrando mais uma vez, a intenção é mostrar o conceito de que é preciso se 
 
 ## Observação
 
-O projeto já vem com as sugestões de utilização com o [GulpJS]() ou [GruntJS](). Escolhendo um automizador de tarefas, basta saber que só precisa que se encontram em 2 lugares. Na raiz, `Gruntfile.js` ou `Gulpfile.js` e na pasta `tasks`, as respectivas pastas.
+O projeto já vem com as sugestões de utilização com o [GulpJS](http://gulpjs.com/) ou [GruntJS](http://gruntjs.com/). Escolhendo um automizador de tarefas, basta saber que só precisa que se encontram em 2 lugares. Na raiz, `Gruntfile.js` ou `Gulpfile.js` e na pasta `tasks`, as respectivas pastas.
 
 
 ## Log
 
-Veja o [Changelog](changelog.md) para mais detalhes.
+Veja o [Changelog](CHANGELOG.md) para mais detalhes.
 
 ## Licença
 
-[MIT license](LICENSE) © Copyright 2015 [Hemerson Vianna](http://hemersonvianna.io).
+[MIT license](LICENSE.md) © Copyright 2015 [Hemerson Vianna](http://hemersonvianna.io).
