@@ -1,4 +1,9 @@
-# Prime ITCSS 
+# Prime ITCSS
+
+[![licence mit](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/prime-solutions/prime-itcss/blob/master/LICENSE)
+[![issues](https://img.shields.io/github/issues/prime-solutions/prime-itcss.svg)](https://github.com/prime-solutions/prime-itcss/issues)
+
+## Introdução
 
 Com a intenção de se ter um núcleo de CSS de vários projetos em um só lugar. Foi criado esse projeto para servir como base em um projeto front-end. Utilizando a metodologia do [ITCSS](http://itcss.io/) e a sintaxes [SCSS](http://sass-lang.com/), [STYLUS](https://learnboost.github.io/stylus/) e [LESS](http://lesscss.org/).
 
@@ -33,6 +38,15 @@ Lembrando mais uma vez, a intenção é mostrar o conceito de que é preciso se 
 
 ```
 
-## License
+## Observação
 
-Copyright (c) 2015 Hemerson Vianna Licensed under the [MIT license](LICENSE).
+O projeto já vem com as sugestões de utilização com o [GulpJS]() ou [GruntJS](). Escolhendo um automizador de tarefas, basta saber que só precisa que se encontram em 2 lugares. Na raiz, `Gruntfile.js` ou `Gulpfile.js` e na pasta `tasks`, as respectivas pastas.
+
+
+## Log
+
+Veja o [Changelog](changelog.md) para mais detalhes.
+
+## Licença
+
+[MIT license](LICENSE) © Copyright 2015 [Hemerson Vianna](http://hemersonvianna.io).
