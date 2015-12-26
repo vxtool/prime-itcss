@@ -20,13 +20,13 @@ A ideia de se utilizar o núcleo, se dá quando é necessário ter mais de um pr
 
 Com isso, no `prime` ficaram as ferramentas que serão utilizados em ambos os projetos (ícones, mixins, functions e etc). 
 
+## Exemplo de uso
+
 Em cada pasta de projeto, não será necessário ter algumas pastas (***00-settings, 01-tools, 03-generic, 03-base, 04-vendor e 09-trumps***), mas isso não é uma regra, você saberá o melhor para o seu projeto. 
 
 Ao escrever, estou considerando que os projetos de exemplo (site, admin), são diferentes e por terem essa distinção, as pastas (***05-objetcs, 06-components, 07-pages e 08-theme***), serão personalizadas para cada projeto.
 
 Lembrando mais uma vez, a intenção é mostrar o conceito de que é preciso se ter um `prime`, para evitar código repetido e que dificulte a manutenção. A organização das pastas nos projetos, fica ao critério da necessidade do mesmo.
-
-## Exemplo de uso
 
 ***style.scss*** (site)
 
@@ -38,10 +38,19 @@ Lembrando mais uma vez, a intenção é mostrar o conceito de que é preciso se 
 
 ```
 
-## Observação
+## Observações e Instalação
 
-O projeto já vem com as sugestões de utilização com o [GulpJS](http://gulpjs.com/) ou [GruntJS](http://gruntjs.com/). Escolhendo um automizador de tarefas, basta saber que só precisa que se encontram em 2 lugares. Na raiz, `Gruntfile.js` ou `Gulpfile.js` e na pasta `tasks`, as respectivas pastas.
+O projeto já vem com as sugestões de utilização com o [GulpJS](http://gulpjs.com/) ou [GruntJS](http://gruntjs.com/). Escolhendo um automizador de tarefas, basta saber que só precisa ficar atento em 3 lugares:
 
+- Na raiz, `Gruntfile.js` ou `Gulpfile.js`.
+- Na pasta `tasks`, onde as tarefas estão divididas pelo automatizador.
+- No arquivo `package.json`, onde estão as dependências.
+
+Se apenas interessa os arquivos, os mesmos se encontram na pasta `source`. Optando por usar um dos automatizadores sugeridos, basta ficar atento aos 3 lugares que foram citados acima e executar no terminal:
+
+`npm install` // Para instalar as dependências
+
+E com as dependências instaladas, o comando `default` do automatizador.
 
 ## Log
 

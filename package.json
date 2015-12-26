@@ -1,8 +1,8 @@
 {
   "name": "primeitcss",
   "description": "Base para a estrutura SCSS/STYLUS/LESS",
-  "version": "0.1.0",
-  "repository": "descco/prime-itcss",
+  "version": "1.0.0",
+  "repository": "https://github.com/prime-solutions/prime-itcss",
   "author": "Hemerson Vianna <hemerson.lourenco@gmail.com> (http://hemersonvianna.io)",
   "tags": [
     "css",
