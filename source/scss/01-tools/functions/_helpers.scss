@@ -1,19 +1,11 @@
 // Strip unit
 ///
-/// @author Hemerson Vianna
-///
-/// @access public
-///
 
 @function x-strip-unit($num) {
   @return $num / ($num * 0 + 1);
 }
 
 // Prefix
-///
-/// @author Hemerson Vianna
-///
-/// @access public
 ///
 @function x-prefix($property, $prefixes: (webkit moz o ms)) {
     $vendor-prefixed-properties: transform background-clip background-size;
@@ -28,10 +20,6 @@
 }
 
 // Transition prefix
-///
-/// @author Hemerson Vianna
-///
-/// @access public
 ///
 @function x-trans-prefix($transition, $prefix: moz) {
     $prefixed: ();

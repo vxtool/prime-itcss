@@ -1,9 +1,7 @@
 // Esconder texto
 //
-// / @author Hemerson Vianna
-//
-// / @access public
-// /
+/// @author Hemerson Vianna
+///
 x-text-hide()
   font-size: 0
   color: transparent
@@ -13,10 +11,8 @@ x-text-hide()
   
 // Clearfix
 //
-// / @author Hemerson Vianna
-//
-// / @access public
-// /
+/// @author Hemerson Vianna
+///
 x-clearfix()
   &:before, &:after
     content: " "
@@ -26,10 +22,8 @@ x-clearfix()
     
 // Opacity
 //
-// / @author Daniele Falcao
-//
-// / @access public
-// /
+/// @author Daniele Falcao
+///
 opacity($opacity)
   opacity: $opacity
   // IE8 filter
@@ -38,10 +32,8 @@ opacity($opacity)
   
 // REM Fallback
 //
-// / @author Hemerson Vianna
-//
-// / @access public
-// /
+/// @author Hemerson Vianna
+///
 x-rem-fallback($property)
   // html {font-size: 62.5%;}
   $max = length($values)
@@ -62,10 +54,8 @@ x-rem-fallback($property)
   
 // Keyframes
 //
-// / @author Hemerson Vianna
-//
-// / @access public
-// /
+/// @author Hemerson Vianna
+///
 x-keyframes($animationName)
   @-webkit-keyframes
     $browser = "-webkit-"
@@ -85,13 +75,11 @@ x-keyframes($animationName)
 $browser = null
 
 /// Mixin to prefix a property
-// / @author Hemerson Vianna
-// / @param {String} $property - Property name
-// / @param {*} $value - Property value
-// / @param {List} $prefixes (()) - List of prefixes to print
-//
-// / @access public
-// /
+/// @author Hemerson Vianna
+/// @param {String} $property - Property name
+/// @param {*} $value - Property value
+/// @param {List} $prefixes (()) - List of prefixes to print
+///
 x-prefix($property, $value, $prefixes = webkit moz o ms)
   for $prefix in $prefixes
     {(interpolation nil (:plus (:plus (:plus "-" $prefix) "-") $property) nil)}: $value
@@ -100,10 +88,8 @@ x-prefix($property, $value, $prefixes = webkit moz o ms)
   
 // Transition
 //
-// / @author Hemerson Vianna
-//
-// / @access public
-// /
+/// @author Hemerson Vianna
+///
 x-transition()
   $transitions = ()
   for $declaration in $values
