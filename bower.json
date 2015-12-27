@@ -7,7 +7,7 @@
   "main": [
     "source/less/style.less",
     "source/scss/style.scss",
-    "source/styl/style.styl",
+    "source/styl/style.styl"
   ],
   "keywords": [
     "css",
