@@ -10,6 +10,8 @@
     "source/styl/style.styl"
   ],
   "keywords": [
+    "itcss",
+    "prime-itcss"
     "css",
     "scss",
     "stylus",
