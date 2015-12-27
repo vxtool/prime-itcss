@@ -1,0 +1,28 @@
+{
+  "name": "prime-itcss",
+  "authors": [
+    "Hemerson Vianna <hemerson.lourenco@gmail.com>"
+  ],
+  "description": "Base CSS para a estrutura SCSS/STYLUS/LESS",
+  "main": [
+    "source/less/style.less",
+    "source/scss/style.scss",
+    "source/styl/style.styl",
+  ],
+  "keywords": [
+    "css",
+    "scss",
+    "stylus",
+    "less",
+    "base",
+    "structure"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
