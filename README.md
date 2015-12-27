@@ -2,6 +2,8 @@
 
 [![licence mit](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/prime-solutions/prime-itcss/blob/master/LICENSE)
 [![issues](https://img.shields.io/github/issues/prime-solutions/prime-itcss.svg)](https://github.com/prime-solutions/prime-itcss/issues)
+[![bower](https://img.shields.io/bower/v/prime-itcss.svg)](https://github.com/prime-solutions/prime-itcss/blob/master/bower.json)
+[![node.js dependencies](https://david-dm.org/prime-solutions/prime-itcss.svg)](https://david-dm.org/prime-solutions/prime-itcss#info=devDependencies)
 
 ## Introdução
 
