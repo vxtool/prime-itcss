@@ -16,11 +16,7 @@
 }
 
 // Opacity
-///
-/// @author Daniele Falcao
-///
-/// @access public
-///
+////
 @mixin opacity($opacity) {
   opacity: $opacity;
   // IE8 filter
@@ -84,12 +80,10 @@
 } $browser: null;
 
 /// Mixin to prefix a property
-/// @author Hemerson Vianna
+///
 /// @param {String} $property - Property name
 /// @param {*} $value - Property value
 /// @param {List} $prefixes (()) - List of prefixes to print
-///
-/// @access public
 ///
 @mixin x-prefix($property, $value, $prefixes: (webkit moz o ms)) {
   @each $prefix in $prefixes {

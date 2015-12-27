@@ -1,6 +1,4 @@
 // Esconder texto
-//
-/// @author Hemerson Vianna
 ///
 x-text-hide()
   font-size: 0
@@ -10,8 +8,6 @@ x-text-hide()
   border: 0
   
 // Clearfix
-//
-/// @author Hemerson Vianna
 ///
 x-clearfix()
   &:before, &:after
@@ -21,8 +17,6 @@ x-clearfix()
     clear: both
     
 // Opacity
-//
-/// @author Daniele Falcao
 ///
 opacity($opacity)
   opacity: $opacity
@@ -31,8 +25,6 @@ opacity($opacity)
   filter: alpha(opacity = $opacity-ie)
   
 // REM Fallback
-//
-/// @author Hemerson Vianna
 ///
 x-rem-fallback($property)
   // html {font-size: 62.5%;}
@@ -53,8 +45,6 @@ x-rem-fallback($property)
   {(interpolation nil $property nil)}: $remValues
   
 // Keyframes
-//
-/// @author Hemerson Vianna
 ///
 x-keyframes($animationName)
   @-webkit-keyframes
@@ -75,7 +65,7 @@ x-keyframes($animationName)
 $browser = null
 
 /// Mixin to prefix a property
-/// @author Hemerson Vianna
+///
 /// @param {String} $property - Property name
 /// @param {*} $value - Property value
 /// @param {List} $prefixes (()) - List of prefixes to print
@@ -87,8 +77,6 @@ x-prefix($property, $value, $prefixes = webkit moz o ms)
   {(interpolation nil $property nil)}: $value
   
 // Transition
-//
-/// @author Hemerson Vianna
 ///
 x-transition()
   $transitions = ()

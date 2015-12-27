@@ -1,9 +1,5 @@
 // Icone
 ///
-/// @author Hemerson Vianna
-/// 
-/// @access public
-///
 @mixin x-icon( $name: "", $position: "left" ) {
   @if $position == "left" {
     &:before {

@@ -1,23 +1,15 @@
 // Largura baseada no grid
-///
-/// @author Hemerson Vianna
 /// 
 /// @param {number} $columns
-///
-/// @access public
 ///
 @function x-gridsystem-width($columns) {
 	@return ($total-width / $total-columns) * $columns;
 }
 
 // Calculo do grid
-///
-/// @author Hemerson Vianna
 /// 
 /// @param {number} $colNumber
 /// @param {number} $totalColumns
-///
-/// @access public
 ///
 @function x-grid-calc($colNumber, $totalColumns) {
   @return percentage(($colNumber / $totalColumns));
