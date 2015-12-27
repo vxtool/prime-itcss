@@ -1,6 +1,6 @@
 {
   "name": "prime-itcss",
-  "description": "Base para a estrutura SCSS/STYLUS/LESS",
+  "description": "Base CSS para a estrutura SCSS/STYLUS/LESS",
   "version": "1.0.0",
   "author": "Hemerson Vianna <hemerson.lourenco@gmail.com> (http://hemersonvianna.io)",
   "repository": {
@@ -29,6 +29,9 @@
     "gulp-load-tasks": "^0.8.4",
     "gulp-sass": "^2.1.0",
     "load-grunt-config": "^0.17.2"
+  },
+  "engines": {
+    "node": ">=0.10.1"
   },
   "license": "MIT"
 }
