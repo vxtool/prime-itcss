@@ -1,6 +1,6 @@
 # Prime ITCSS
 
-[![licence mit](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/prime-solutions/prime-itcss/blob/master/LICENSE)
+[![licence mit](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/prime-solutions/prime-itcss/blob/master/LICENSE.md)
 [![issues](https://img.shields.io/github/issues/prime-solutions/prime-itcss.svg)](https://github.com/prime-solutions/prime-itcss/issues)
 [![bower](https://img.shields.io/bower/v/prime-itcss.svg)](https://github.com/prime-solutions/prime-itcss/blob/master/bower.json)
 [![devDependency Status](https://david-dm.org/prime-solutions/prime-itcss/dev-status.svg)](https://david-dm.org/prime-solutions/prime-itcss#info=devDependencies)
@@ -54,10 +54,18 @@ Se apenas interessa os arquivos, os mesmos se encontram na pasta `source`. Optan
 
 E com as dependências instaladas, o comando `default` do automatizador.
 
+## Contributing
+
+- Fork it!
+- Create your feature branch: `git checkout -b my-new-feature`
+- Commit your changes: `git commit -m 'Add some feature'`
+- Push to the branch: `git push origin my-new-feature`
+- Submit a pull request
+
 ## Log
 
-Veja o [Changelog](CHANGELOG.md) para mais detalhes.
+Check [Releases](https://github.com/prime-solutions/prime-itcss/releases) for detailed changelog.
 
-## Licença
+## License
 
-[MIT license](LICENSE.md) © Copyright 2015 [Hemerson Vianna](http://hemersonvianna.io).
+[MIT license](http://hemersonvianna.mit-license.org/) © Hemerson Vianna
