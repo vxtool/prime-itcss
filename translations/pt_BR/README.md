@@ -7,7 +7,7 @@
 
 ## Traduções
 
-* [ORIGINAL](https://github.com/math-solutions/math-fibonacci-sequence/)
+* [ORIGINAL](https://github.com/prime-solutions/prime-itcss/)
 
 ## Introdução
 
