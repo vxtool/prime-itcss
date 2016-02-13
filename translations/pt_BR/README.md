@@ -5,9 +5,9 @@
 [![bower](https://img.shields.io/bower/v/prime-itcss.svg?style=flat-square)](https://github.com/prime-solutions/prime-itcss/blob/master/bower.json)
 [![devDependency Status](https://david-dm.org/prime-solutions/prime-itcss/dev-status.svg)](https://david-dm.org/prime-solutions/prime-itcss#info=devDependencies)
 
-## Translations
+## Traduções
 
-* [Portuguese - Brazil](translations/pt_BR)
+* [ORIGINAL](https://github.com/math-solutions/math-fibonacci-sequence/)
 
 ## Introdução
 
