@@ -1,9 +1,15 @@
 {
   "name": "prime-itcss",
-  "authors": [
-    "Hemerson Vianna <hemerson.lourenco@gmail.com>"
-  ],
-  "description": "Base CSS para a estrutura SCSS/STYLUS/LESS",
+  "version": "1.0.0",
+  "description": "Prime CSS structure for concentration of multiple projects (SCSS/STYLUS/LESS)",
+  "author": "Hemerson Vianna <hemerson.lourenco@gmail.com> (http://hemersonvianna.io)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prime-solutions/prime-itcss.git"
+  },
+  "bugs": {
+    "url": "https://github.com/prime-solutions/prime-itcss/issues"
+  },
   "main": [
     "source/less/style.less",
     "source/scss/style.scss",
