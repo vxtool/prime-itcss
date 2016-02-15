@@ -4,8 +4,8 @@
 [![issues](https://img.shields.io/github/issues/prime-solutions/prime-itcss.svg?style=flat-square)](https://github.com/prime-solutions/prime-itcss/issues)
 [![bower](https://img.shields.io/bower/v/prime-itcss.svg?style=flat-square)](https://github.com/prime-solutions/prime-itcss/blob/master/bower.json)
 [![GitHub release](https://img.shields.io/github/release/prime-solutions/prime-itcss.svg?style=flat-square)](https://github.com/prime-solutions/prime-itcss/releases)
-[![npm](https://img.shields.io/npm/dt/express.svg?style=flat-square)](https://www.npmjs.com/package/prime-itcss)
-[![devDependency Status](https://david-dm.org/prime-solutions/prime-itcss/dev-status.svg)](https://david-dm.org/prime-solutions/prime-itcss#info=devDependencies)
+[![npm](https://img.shields.io/npm/dt/prime-itcss.svg?style=flat-square)](https://www.npmjs.com/package/prime-itcss)
+[![devDependency Status](https://img.shields.io/david/dev/prime-solutions/prime-itcss.svg?style=flat-square)](https://david-dm.org/prime-solutions/prime-itcss#info=devDependencies)
 
 ## Translations
 
