@@ -30,13 +30,13 @@ Com isso, no `prime` ficaram as ferramentas que serão utilizados em ambos os pr
 
 ## Exemplo de uso
 
-Em cada pasta de projeto, não será necessário ter algumas pastas (***00-settings, 01-tools, 03-generic, 03-base, 04-vendor e 09-trumps***), mas isso não é uma regra, você saberá o melhor para o seu projeto. 
+Em cada pasta de projeto, não será necessário ter algumas pastas (`00-settings, 01-tools, 03-generic, 03-base, 04-vendor e 09-trumps`), mas isso não é uma regra, você saberá o melhor para o seu projeto. 
 
-Ao escrever, estou considerando que os projetos de exemplo (site, admin), são diferentes e por terem essa distinção, as pastas (***05-objetcs, 06-components, 07-pages e 08-theme***), serão personalizadas para cada projeto.
+Ao escrever, estou considerando que os projetos de exemplo (site, admin), são diferentes e por terem essa distinção, as pastas (`05-objetcs, 06-components, 07-pages e 08-theme`), serão personalizadas para cada projeto.
 
 Lembrando mais uma vez, a intenção é mostrar o conceito de que é preciso se ter um `prime`, para evitar código repetido e que dificulte a manutenção. A organização das pastas nos projetos, fica ao critério da necessidade do mesmo.
 
-***style.scss*** (site)
+`style.scss` (site)
 
 ```
 @import "../prime/00-settings/_variables";
@@ -56,7 +56,9 @@ O projeto já vem com as sugestões de utilização com o [GulpJS](http://gulpjs
 
 Se apenas interessa os arquivos, os mesmos se encontram na pasta `source`. Optando por usar um dos automatizadores sugeridos, basta ficar atento aos 3 lugares que foram citados acima e executar no terminal:
 
-`npm install` // Para instalar as dependências
+```
+npm install // Para instalar as dependências
+```
 
 E com as dependências instaladas, o comando `default` do automatizador.
 

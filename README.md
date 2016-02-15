@@ -29,13 +29,13 @@ With this, in the `prime` were the tools that will be used in both projects (ico
 
 ## Example usage
 
-In each project folder, it is not necessary to have some folders (***00-settings, 01-tools, 03-generic, 03-base, 04-vendor e 09-trumps***), but this is not a rule, you will know the best for your project. 
+In each project folder, it is not necessary to have some folders (`00-settings, 01-tools, 03-generic, 03-base, 04-vendor e 09-trumps`), but this is not a rule, you will know the best for your project. 
 
-When writing , I am considering that the sample projects (site, admin), they are different and to have this distinction, folders (***05-objetcs, 06-components, 07-pages e 08-theme***), will be customized for each project.
+When writing , I am considering that the sample projects (site, admin), they are different and to have this distinction, folders (`05-objetcs, 06-components, 07-pages e 08-theme`), will be customized for each project.
 
 Recalling once again, the intention is to show the concept that one must have a `prime`, to avoid repeated code and making it difficult to maintain. The organization of folders in the projects , is at the discretion of the need of the same.
 
-***style.scss*** (site)
+`style.scss` (site)
 
 ```
 @import "../prime/00-settings/_variables";
@@ -55,7 +55,9 @@ The project comes with usage tips with [GulpJS](http://gulpjs.com/) or [GruntJS]
 
 Only interests the files , they are in the folder `source`. Opting to use one of the suggested Automation , just stay tuned to the three places that were mentioned above and run in the terminal:
 
-`npm install` // To install the dependencies
+```
+npm install // To install the dependencies
+```
 
 And with the dependencies installed , the command `default` the automator.
 
