@@ -26,32 +26,10 @@
 
 // REM Fallback
 ///
-.x-rem-fallback(@property, @values...) {
-  // html {font-size: 62.5%;}
-  @max: length(@values);
-  @pxValues: '';
-  @remValues: '';
-
-  @for @i from 1 through @max {
-    @value: x-strip-unit(nth(@values, @i));
-    @pxValues: @{@pxValues + @value*10}px;
-
-    @if @i < @max {
-      @pxValues: @{@pxValues + " "};
-    }
-  } 
-
-  @for @i from 1 through @max {
-    @value: strip-unit(nth(@values, @i));
-    @remValues: @{@remValues + @value}rem;
-
-    @if @i < @max {
-      @remValues: @{@remValues + " "};
-    }
-  } 
-  
-  @{@property}: @pxValues; 
-  @{@property}: @remValues; 
+.x-rem-fallback(@property, @value, @base-px: @base-font-size-px) {
+  @px-fallback: @value * @base-px;
+  -:~`(function(){return '@{property}: @{px-fallback}';})()`;
+  -:~`(function(){return '@{property}: @{value}rem';}())`;}
 }
 
 // Keyframes
@@ -89,26 +67,26 @@
   @each @prefix in @prefixes {
     @{'-' + @prefix + '-' + @property}: @value;
   }
- 
+
   // Output standard non-prefixed declaration
   @{@property}: @value;
 }
 
 // Transition
 ///
-.x-transition(@values...) { 
+.x-transition(@values...) {
     @transitions: ();
     @each @declaration in @values {
         @prop: nth(@declaration, 1);
         @prop-opts: ();
         @length: length(@declaration);
         @for @i from 2 through @length {
-            @prop-opts: append(@prop-opts, nth(@declaration, @i));   
+            @prop-opts: append(@prop-opts, nth(@declaration, @i));
         }
         @trans: (@prop, @prop-opts);
         @transitions: append(@transitions, @trans, comma);
     }
-      
+
     -webkit-transition: x-trans-prefix(@transitions, webkit);
     -moz-transition: x-trans-prefix(@transitions, moz);
     -o-transition: x-trans-prefix(@transitions, o);

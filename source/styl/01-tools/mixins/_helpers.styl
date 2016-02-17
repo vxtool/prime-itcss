@@ -1,4 +1,4 @@
-// Esconder texto
+// Hide text
 ///
 x-text-hide()
   font-size: 0
@@ -6,76 +6,51 @@ x-text-hide()
   text-shadow: none
   background-color: transparent
   border: 0
-  
+
 // Clearfix
 ///
 x-clearfix()
-  &:before, &:after
+  &:before,
+  &:after
     content: " "
     display: table
   &:after
     clear: both
-    
+
 // Opacity
 ///
-opacity($opacity)
-  opacity: $opacity
-  // IE8 filter
-  $opacity-ie = $opacity * 100
-  filter: alpha(opacity = $opacity-ie)
-  
+x-opacity(n)
+  -khtml-opacity n
+  -moz-opacity n
+  opacity n
+  -ms-filter unquote('"progid:DXImageTransform.Microsoft.Alpha(Opacity=' + round(n * 100) + ')"')
+  filter unquote('alpha(opacity=' + round(n * 100) + ')')
+
 // REM Fallback
 ///
-x-rem-fallback($property)
-  // html {font-size: 62.5%;}
-  $max = length($values)
-  $pxValues = ""
-  $remValues = ""
-  for $i in (1)..($max)
-    $value = x-strip-unit(unit($values, $i))
-    $pxValues = #{$pxValues + $value * 10}px
-    if $i < $max
-      $pxValues = #{$pxValues + " "}
-  for $i in (1)..($max)
-    $value = strip-unit(unit($values, $i))
-    $remValues = #{$remValues + $value}rem
-    if $i < $max
-      $remValues = #{$remValues + " "}
-  {(interpolation nil $property nil)}: $pxValues
-  {(interpolation nil $property nil)}: $remValues
-  
-// Keyframes
+x-rem-fallback(property, value, base-px = base-font-size-px)
+  {property}: 0px + value * base-px
+  {property}: 0rem + (value)
+
+// Keyframes (native)
 ///
-x-keyframes($animationName)
-  @-webkit-keyframes
-    $browser = "-webkit-"
-    {block}
-  @-moz-keyframes
-    $browser = "-moz-"
-    {block}
-  @-o-keyframes
-    $browser = "-o-"
-    {block}
-  @-ms-keyframes
-    $browser = "-ms-"
-    {block}
-  @keyframes
-    $browser = ""
-    {block}
-$browser = null
+// vendors = moz webkit o official
+
+// @keyframes [animationName] {
+//   [content]
+// }
 
 /// Mixin to prefix a property
 ///
 /// @param {String} $property - Property name
-/// @param {*} $value - Property value
-/// @param {List} $prefixes (()) - List of prefixes to print
+/// @param {*} $args - Property value
+/// @param {List} prefixes (()) - List of prefixes to print
 ///
-x-prefix($property, $value, $prefixes = webkit moz o ms)
-  for $prefix in $prefixes
-    {(interpolation nil (:plus (:plus (:plus "-" $prefix) "-") $property) nil)}: $value
-  // Output standard non-prefixed declaration
-  {(interpolation nil $property nil)}: $value
-  
+x-prefix(prop, args, prefixes = (webkit moz ms o))
+ for i in prefixes
+  -{i}-{prop} args
+ {prop} args
+
 // Transition
 ///
 x-transition()
