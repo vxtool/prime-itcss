@@ -1,16 +1,20 @@
-// Largura baseada no grid
-/// 
+// width based on grid
+///
 /// @param {number} @columns
 ///
-@function x-gridsystem-width(@columns) {
-	@return (@total-width / @total-columns) * @columns;
-}
+@xGridsystemWidth: ~`xGridsystemWidth = function(columns) {
+  calc = (@{total-width} / @{total-columns}) * columns;
+  return calc+"%";
+}`;
 
-// Calculo do grid
-/// 
+// the grid calculation
+///
 /// @param {number} @colNumber
 /// @param {number} @totalColumns
 ///
-@function x-grid-calc(@colNumber, @totalColumns) {
-  @return percentage((@colNumber / @totalColumns));
-}
+///width: ~`xGridCalc(10, 12)`;
+///
+@xGridCalc: ~`xGridCalc = function(colNumber, totalColumns) {
+  calc = colNumber / totalColumns;
+  return calc+"%";
+}`;

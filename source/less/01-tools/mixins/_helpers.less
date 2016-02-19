@@ -34,62 +34,41 @@
 
 // Keyframes
 ///
-.x-keyframes(@animationName) {
-  @-webkit-keyframes @{@animationName} {
-      @browser: '-webkit-' !global;
-      @content;
+/// & {
+///    .keyframes(testanimation);.-frames(@-...){
+///     0% { left: 0; @{-}transform: translate(10px, 20px); }
+///     100% { left: 100%; @{-}transform: translate(100px, 200px); }
+///    }
+/// }
+}
+.keyframes(@name) {
+  @-webkit-keyframes @name {
+    .-frames(-webkit-);
   }
-  @-moz-keyframes @{@animationName} {
-      @browser: '-moz-' !global;
-      @content;
+  @-moz-keyframes @name {
+    .-frames(-moz-);
   }
-  @-o-keyframes @{@animationName} {
-      @browser: '-o-' !global;
-      @content;
+  @-webkit-keyframes @name {
+    .-frames(-o-);
   }
-  @-ms-keyframes @{@animationName} {
-      @browser: '-ms-' !global;
-      @content;
+  @-moz-keyframes @name {
+    .-frames(-ms-);
   }
-  @keyframes @{@animationName} {
-      @browser: '' !global;
-      @content;
+  @keyframes @name {
+    .-frames();
   }
-} @browser: null;
+}
 
 /// Mixin to prefix a property
 ///
 /// @param {String} @property - Property name
 /// @param {*} @value - Property value
 /// @param {List} @prefixes (()) - List of prefixes to print
+/// @param {NUmber} @length - length of the list
 ///
-.x-prefix(@property, @value, @prefixes: (webkit moz o ms)) {
-  @each @prefix in @prefixes {
-    @{'-' + @prefix + '-' + @property}: @value;
-  }
-
-  // Output standard non-prefixed declaration
-  @{@property}: @value;
+.x-prefix(@property; @values; @prefixes: -webkit-, -moz-, -o-, -ms-, ~''; @length: 5) when (@length > 0) {
+  .x-prefix(@property; @values; @prefixes:@prefixes; (@length - 1));
+  @prefix  : extract(@prefixes, @length);
+  @{prefix}@{property}: @values;
 }
 
-// Transition
-///
-.x-transition(@values...) {
-    @transitions: ();
-    @each @declaration in @values {
-        @prop: nth(@declaration, 1);
-        @prop-opts: ();
-        @length: length(@declaration);
-        @for @i from 2 through @length {
-            @prop-opts: append(@prop-opts, nth(@declaration, @i));
-        }
-        @trans: (@prop, @prop-opts);
-        @transitions: append(@transitions, @trans, comma);
-    }
-
-    -webkit-transition: x-trans-prefix(@transitions, webkit);
-    -moz-transition: x-trans-prefix(@transitions, moz);
-    -o-transition: x-trans-prefix(@transitions, o);
-    -ms-transition: x-trans-prefix(@transitions, ms);
-    transition: @values;
-}
