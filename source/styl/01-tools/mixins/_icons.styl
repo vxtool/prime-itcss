@@ -1,13 +1,13 @@
 // Icone
 ///
-x-icon($name = "", $position = "left")
-  if $position == "left"
+x-icon(name = "", position = "left")
+  if position == "left"
     &:before
       @extend $fa
-      @extend $#{$name}
+      @extend ${name}
       margin-right: 10px
-  else if $position == "right"
+  else if position == "right"
     &:after
       @extend $fa
-      @extend $#{$name}
+      @extend ${name}
       margin-left: 10px

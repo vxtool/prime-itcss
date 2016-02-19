@@ -1,13 +1,14 @@
-// Largura baseada no grid
+// width based on grid
 ///
-/// @param {number} $columns
+/// @param {number} columns
 ///
-x-gridsystem-width($columns)
-  $total-width / $total-columns * $columns
-// Calculo do grid
+x-gridsystem-width(columns)
+  total-width / total-columns * columns
+
+// the grid calculation
 ///
-/// @param {number} $colNumber
-/// @param {number} $totalColumns
+/// @param {number} colNumber
+/// @param {number} totalColumns
 ///
-x-grid-calc($colNumber, $totalColumns)
-  calc($colNumber / $totalColumns)
+x-grid-calc(colNumber, totalColumns)
+  colNumber / totalColumns

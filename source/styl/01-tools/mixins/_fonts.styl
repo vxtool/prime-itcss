@@ -1,32 +1,32 @@
 // Font face
 ///
-/// @param {string} $style-name
-/// @param {string} $file
-/// @param {string} $family
-/// @param {string} $category
-/// @param {number} $weight
+/// @param {string} style-name
+/// @param {string} file
+/// @param {string} family
+/// @param {string} category
+/// @param {number} weight
 ///
-x-font-face($style-name, $file, $family, $category = "", $weight = 400)
-  $filepath = "../fonts/" + $family + "/" + $file
+x-font-face(stylename, file, family, category = "", weight = 400)
+  filepath = "../fonts/" + family + "/" + file
   @font-face
-    font-family: {$style-name}
-    src: url($filepath + ".eot")
-    src: url($filepath + ".eot?#iefix") format("embedded-opentype"), url($filepath + ".woff2") format("woff2"), url($filepath + ".woff") format("woff"), url($filepath + ".ttf") format("truetype"), url($filepath + ".svg#" + $style-name + "") format("svg")
-    font-weight: $weight
+    font-family: stylename
+    src: url(filepath + ".eot")
+    src: url(filepath + ".eot?#iefix") format("embedded-opentype"), url(filepath + ".woff2") format("woff2"), url(filepath + ".woff") format("woff"), url($filepath + ".ttf") format("truetype"), url($filepath + ".svg#" + $style-name + "") format("svg")
+    font-weight: weight
     font-style: normal
     font-variant: normal
     -webkit-font-smoothing: antialiased
   @media screen and (-webkit-min-device-pixel-ratio: 0)
     @font-face
-      font-family: {$style-name}
-      src: url($filepath + ".svg#" + $style-name + "") format("svg")
-      font-weight: $weight
-      
-      
+      font-family: stylename
+      src: url(filepath + ".svg#" + stylename + "") format("svg")
+      font-weight: weight
+
+
 // Font size
 ///
 /// @param {number} $sizeValue
 ///
-x-font-size($sizeValue = 1.5)
-  font-size: ($sizeValue * 10 + px)
-  font-size: ($sizeValue + rem)
+x-font-size(sizeValue = 1.5)
+  font-size: (sizeValue * 10 + px)
+  font-size: (sizeValue + rem)

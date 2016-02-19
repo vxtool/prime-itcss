@@ -54,17 +54,15 @@ x-prefix(prop, args, prefixes = (webkit moz ms o))
 // Transition
 ///
 x-transition()
-  $transitions = ()
-  for $declaration in $values
-    $prop = unit($declaration, 1)
-    $prop-opts = ()
-    $length = length($declaration)
-    for $i in (2)..($length)
-      $prop-opts = push($prop-opts, nth($declaration, $i))
-    $trans = $prop, $prop-opts
-    $transitions = push($transitions, $trans, comma)
-  -webkit-transition: x-trans-prefix($transitions, webkit)
-  -moz-transition: x-trans-prefix($transitions, moz)
-  -o-transition: x-trans-prefix($transitions, o)
-  -ms-transition: x-trans-prefix($transitions, ms)
-  transition: $values
+  transitions = ()
+  for declaration in arguments
+    prop = arguments[0]
+    prop-opts = ()
+    length = length(arguments)
+    for i in (1)..(length)
+      push(prop-opts, arguments[i])
+  -webkit-transition: x-prefix-property(prop, webkit) prop-opts
+  -moz-transition: x-prefix-property(prop, moz) prop-opts
+  -o-transition: x-prefix-property(prop, o) prop-opts
+  -ms-transition: x-prefix-property(prop, ms) prop-opts
+  transition: arguments

@@ -1,26 +1,10 @@
-// Strip unit
-///
-x-strip-unit($num)
-  $num / ($num * 0 + 1)
-  
 // Prefix
 ///
-x-prefix($property, $prefixes = webkit moz o ms)
-  $vendor-prefixed-properties = transform background-clip background-size
-  $result = ()
-  for $prefix in $prefixes
-    if index($vendor-prefixed-properties, $property)
-      $property = -#{$prefix}-#{$property}
-    $result = push($result, $property)
-  $result
-    
-// Transition prefix
-///
-x-trans-prefix($transition, $prefix = moz)
-  $prefixed = ()
-  for $trans in $transition
-    $prop-name = unit($trans, 1)
-    $vendor-prop-name = x-prefix($prop-name, $prefix)
-    $prop-vals = unit($trans, 2)
-    $prefixed = push($prefixed, $vendor-prop-name $prop-vals, comma)
-  $prefixed
+x-prefix-property(property, prefixes = (webkit moz o ms))
+ vendor-prefixed-properties = (transform background-clip background-size)
+ result = ()
+ for prefix in prefixes
+  if property in vendor-prefixed-properties
+   property = unquote('-'+prefix+'-'+property)
+  push(result, property)
+ result
