@@ -27,13 +27,14 @@
 // REM Fallback
 ///
 @mixin x-rem-fallback($property, $values...) {
+  // html {font-size: 62.5%;}
   $max: length($values);
   $pxValues: '';
   $remValues: '';
 
   @for $i from 1 through $max {
-    $value: strip-unit(nth($values, $i));
-    $pxValues: #{$pxValues + $value*16}px;
+    $value: x-strip-unit(nth($values, $i));
+    $pxValues: #{$pxValues + $value*10}px;
 
     @if $i < $max {
       $pxValues: #{$pxValues + " "};
@@ -41,7 +42,7 @@
   }
 
   @for $i from 1 through $max {
-    $value: strip-unit(nth($values, $i));
+    $value: x-strip-unit(nth($values, $i));
     $remValues: #{$remValues + $value}rem;
 
     @if $i < $max {
