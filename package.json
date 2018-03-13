@@ -2,13 +2,13 @@
   "name": "prime-itcss",
   "description": "Prime CSS structure for concentration of multiple projects (SCSS/STYLUS/LESS)",
   "version": "1.1.3",
-  "author": "Hemerson Vianna <hemerson.lourenco@gmail.com> (http://hemersonvianna.io)",
+  "author": "Hemerson Vianna <hemerson.lourenco@gmail.com> (http://descco.io)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/prime-solutions/prime-itcss.git"
+    "url": "https://github.com/descco-tools/prime-itcss.git"
   },
   "bugs": {
-    "url": "https://github.com/prime-solutions/prime-itcss/issues"
+    "url": "https://github.com/descco-tools/prime-itcss/issues"
   },
   "keywords": [
     "css",

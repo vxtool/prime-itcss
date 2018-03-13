@@ -1,15 +1,15 @@
 # Prime ITCSS
 
 [![licence mit](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](http://hemersonvianna.mit-license.org/)
-[![issues](https://img.shields.io/github/issues/prime-solutions/prime-itcss.svg?style=flat-square)](https://github.com/prime-solutions/prime-itcss/issues)
-[![GitHub release](https://img.shields.io/github/release/prime-solutions/prime-itcss.svg?style=flat-square)](https://github.com/prime-solutions/prime-itcss/releases)
+[![issues](https://img.shields.io/github/issues/descco-tools/prime-itcss.svg?style=flat-square)](https://github.com/descco-tools/prime-itcss/issues)
+[![GitHub release](https://img.shields.io/github/release/descco-tools/prime-itcss.svg?style=flat-square)](https://github.com/descco-tools/prime-itcss/releases)
 [![npm](https://img.shields.io/npm/dt/prime-itcss.svg?style=flat-square)](https://www.npmjs.com/package/prime-itcss)
-[![devDependency Status](https://img.shields.io/david/dev/prime-solutions/prime-itcss.svg?style=flat-square)](https://david-dm.org/prime-solutions/prime-itcss#info=devDependencies)
+[![devDependency Status](https://img.shields.io/david/dev/descco-tools/prime-itcss.svg?style=flat-square)](https://david-dm.org/descco-tools/prime-itcss#info=devDependencies)
 
 
 ## Traduções
 
-* [ORIGINAL](https://github.com/prime-solutions/prime-itcss/)
+* [ORIGINAL](https://github.com/descco-tools/prime-itcss/)
 
 ## Introdução
 
