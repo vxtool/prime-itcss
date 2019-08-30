@@ -2,13 +2,13 @@
   "name": "prime-itcss",
   "version": "1.1.3",
   "description": "Prime CSS structure for concentration of multiple projects (SCSS/STYLUS/LESS)",
-  "author": "Hemerson Vianna <hemerson.lourenco@gmail.com> (http://hemersonvianna.io)",
+  "author": "Hemerson Vianna <hemerson.lourenco@gmail.com> (https://nerdcalistenico.com.br)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/prime-solutions/prime-itcss.git"
+    "url": "https://github.com/org-victorinox/prime-itcss.git"
   },
   "bugs": {
-    "url": "https://github.com/prime-solutions/prime-itcss/issues"
+    "url": "https://github.com/org-victorinox/prime-itcss/issues"
   },
   "main": [
     "source/less/style.less",

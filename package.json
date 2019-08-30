@@ -2,13 +2,13 @@
   "name": "prime-itcss",
   "description": "Prime CSS structure for concentration of multiple projects (SCSS/STYLUS/LESS)",
   "version": "1.1.3",
-  "author": "Hemerson Vianna <hemerson.lourenco@gmail.com> (http://descco.io)",
+  "author": "Hemerson Vianna <hemerson.lourenco@gmail.com> (https://nerdcalistenico.com.br)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/descco-tools/prime-itcss.git"
+    "url": "https://github.com/org-victorinox/prime-itcss.git"
   },
   "bugs": {
-    "url": "https://github.com/descco-tools/prime-itcss/issues"
+    "url": "https://github.com/org-victorinox/prime-itcss/issues"
   },
   "keywords": [
     "css",
@@ -19,16 +19,20 @@
     "asset",
     "structure"
   ],
+  "scripts": {
+    "release": "./node_modules/.bin/release-it --no-npm.publish --git.tagName='v${version}' --github.release"
+  },
   "dependencies": {},
   "devDependencies": {
-    "grunt": ">=0.4.5",
-    "grunt-contrib-clean": "^0.7.0",
-    "grunt-sass": "^1.0.0",
-    "gulp": "^3.9.0",
-    "gulp-clean": "^0.3.1",
-    "gulp-load-tasks": "^0.8.4",
-    "gulp-sass": "^2.1.0",
-    "load-grunt-config": "^0.19.1"
+    "grunt": "0.4.5",
+    "grunt-contrib-clean": "0.7.0",
+    "grunt-sass": "1.0.0",
+    "gulp": "3.9.0",
+    "gulp-clean": "0.3.1",
+    "gulp-load-tasks": "0.8.4",
+    "gulp-sass": "2.1.0",
+    "load-grunt-config": "0.19.1",
+    "release-it": "12.3.6"
   },
   "engines": {
     "node": ">=0.10.1"
