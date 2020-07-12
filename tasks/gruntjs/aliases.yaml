@@ -1,3 +1,0 @@
-default:
-  - 'clean'
-  - 'sass'
