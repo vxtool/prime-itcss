@@ -45,7 +45,7 @@ Or add this package to your `package.json` file:
 
 ```
 "dependencies": {
-    "prime-itcss": "1.1.3"
+    "@vxtool/prime-itcss": "1.1.3"
   }
 ```
 And with the dependencies installed , the command `default` the automator.

@@ -45,7 +45,7 @@ ou adicione este pacote no seu arquivo `package.json`:
 
 ```
 "dependencies": {
-    "prime-itcss": "1.1.3"
+    "@vxtool/prime-itcss": "1.1.3"
   }
 ```
 
