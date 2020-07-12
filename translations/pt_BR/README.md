@@ -31,15 +31,7 @@ Com isso, no `prime` ficaram as ferramentas que serão utilizados em ambos os pr
 
 ## Instalação
 
-O projeto já vem com as sugestões de utilização com o [GulpJS](http://gulpjs.com/) ou [GruntJS](http://gruntjs.com/). Escolhendo um automizador de tarefas, basta saber que só precisa ficar atento em 3 lugares:
-
-- Na raiz, `Gruntfile.js` ou `Gulpfile.js`.
-- Na pasta `tasks`, onde as tarefas estão divididas pelo automatizador.
-- No arquivo `package.json`, onde estão as dependências.
-
-Se apenas interessa os arquivos, os mesmos se encontram na pasta `source`. Optando por usar um dos automatizadores sugeridos, basta ficar atento aos 3 lugares que foram citados acima e executar no terminal:
-
-`$ npm install prime-itcss`
+`$ npm install @vxtool/prime-itcss`
 
 ou adicione este pacote no seu arquivo `package.json`:
 

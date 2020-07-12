@@ -31,15 +31,7 @@ With this, in the `prime` were the tools that will be used in both projects (ico
 
 ## Installation
 
-The project comes with usage tips with [GulpJS](http://gulpjs.com/) or [GruntJS](http://gruntjs.com/). Choosing a automizador tasks, just knowing that only need to be aware in 3 places:
-
-- At the root, `Gruntfile.js` or `Gulpfile.js`.
-- In folder `tasks`, where tasks are divided by automator.
-- In the file `package.json`, where are the dependencies.
-
-Only interests the files , they are in the folder `source`. Opting to use one of the suggested Automation , just stay tuned to the three places that were mentioned above and run in the terminal:
-
-`$ npm install prime-itcss`
+`$ npm install @vxtool/prime-itcss`
 
 Or add this package to your `package.json` file:
 
